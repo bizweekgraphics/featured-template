@@ -1,6 +1,7 @@
 /* page compilation --*/
 
-@import "base/base";
+@import "bourbon/bourbon";
+@import "base/base"; /*-- Edit color and typography in _variables.scss & _typography.scss -- */
 
 /*-- STYLES WE CONTROL -- */
 @import "layout/ledes";

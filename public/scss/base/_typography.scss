@@ -15,7 +15,8 @@ h4,
 h5,
 h6 {
     font-family: $heading-font-family;
-    line-height: $heading-line-height;
+    // line-height: $heading-line-height;
+    font-weight: normal;
     margin: 0 0 $small-spacing;
 }
 
