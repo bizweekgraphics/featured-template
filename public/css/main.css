@@ -1,4 +1,5 @@
 /* page compilation --*/
+/* line 1, ../scss/base/_buttons.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"],
 button {
   -webkit-appearance: none;
@@ -21,38 +22,54 @@ button {
   text-decoration: none;
   user-select: none;
   vertical-align: middle;
-  white-space: nowrap; }
-  button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus,
-  button:hover,
-  button:focus {
-    background-color: #1a008b;
-    color: #fff; }
-  button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled,
-  button:disabled {
-    cursor: not-allowed;
-    opacity: 0.5; }
+  white-space: nowrap;
+}
+/* line 21, ../scss/base/_buttons.scss */
+button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus,
+button:hover,
+button:focus {
+  background-color: #1a008b;
+  color: #fff;
+}
+/* line 27, ../scss/base/_buttons.scss */
+button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled,
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
 
+/* line 1, ../scss/base/_forms.scss */
 fieldset {
   background-color: #f7f7f7;
   border: 1px solid #ddd;
   margin: 0 0 0.875em;
-  padding: 1.75em; }
+  padding: 1.75em;
+}
 
+/* line 8, ../scss/base/_forms.scss */
 input,
 label,
 select {
   display: block;
   font-family: "TiemposTextWeb-Regular", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
-  font-size: 1.25em; }
+  font-size: 1.25em;
+}
 
+/* line 16, ../scss/base/_forms.scss */
 label {
   font-weight: 600;
-  margin-bottom: 0.4375em; }
-  label.required::after {
-    content: "*"; }
-  label abbr {
-    display: none; }
+  margin-bottom: 0.4375em;
+}
+/* line 20, ../scss/base/_forms.scss */
+label.required::after {
+  content: "*";
+}
+/* line 24, ../scss/base/_forms.scss */
+label abbr {
+  display: none;
+}
 
+/* line 29, ../scss/base/_forms.scss */
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,
 select[multiple=multiple],
 textarea {
@@ -66,55 +83,79 @@ textarea {
   margin-bottom: 0.875em;
   padding: 0.58333em;
   transition: border-color;
-  width: 100%; }
-  input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover,
-  select[multiple=multiple]:hover,
-  textarea:hover {
-    border-color: #c4c4c4; }
-  input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
-  select[multiple=multiple]:focus,
-  textarea:focus {
-    border-color: #2800D7;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(35, 0, 190, 0.7);
-    outline: none; }
+  width: 100%;
+}
+/* line 44, ../scss/base/_forms.scss */
+input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover,
+select[multiple=multiple]:hover,
+textarea:hover {
+  border-color: #c4c4c4;
+}
+/* line 48, ../scss/base/_forms.scss */
+input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
+select[multiple=multiple]:focus,
+textarea:focus {
+  border-color: #2800D7;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(35, 0, 190, 0.7);
+  outline: none;
+}
 
+/* line 55, ../scss/base/_forms.scss */
 textarea {
-  resize: vertical; }
+  resize: vertical;
+}
 
+/* line 59, ../scss/base/_forms.scss */
 input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
-  appearance: none; }
+  appearance: none;
+}
 
+/* line 63, ../scss/base/_forms.scss */
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
-  margin-right: 0.4375em; }
+  margin-right: 0.4375em;
+}
 
+/* line 69, ../scss/base/_forms.scss */
 input[type="file"] {
   padding-bottom: 0.875em;
-  width: 100%; }
+  width: 100%;
+}
 
+/* line 74, ../scss/base/_forms.scss */
 select {
   margin-bottom: 1.75em;
   max-width: 100%;
-  width: auto; }
+  width: auto;
+}
 
+/* line 1, ../scss/base/_lists.scss */
 ul,
 ol {
   list-style-type: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
+/* line 20, ../scss/base/_lists.scss */
 dl {
-  margin-bottom: 0.875em; }
-  dl dt {
-    font-weight: bold;
-    margin-top: 0.875em; }
-  dl dd {
-    margin: 0; }
+  margin-bottom: 0.875em;
+}
+/* line 23, ../scss/base/_lists.scss */
+dl dt {
+  font-weight: bold;
+  margin-top: 0.875em;
+}
+/* line 28, ../scss/base/_lists.scss */
+dl dd {
+  margin: 0;
+}
 
+/* line 1, ../scss/base/_tables.scss */
 table {
   -webkit-font-feature-settings: "kern", "liga", "tnum";
   -moz-font-feature-settings: "kern", "liga", "tnum";
@@ -123,23 +164,31 @@ table {
   border-collapse: collapse;
   margin: 0.875em 0;
   table-layout: fixed;
-  width: 100%; }
+  width: 100%;
+}
 
+/* line 9, ../scss/base/_tables.scss */
 th {
   border-bottom: 1px solid #b7b7b7;
   font-weight: 600;
   padding: 0.875em 0;
-  text-align: left; }
+  text-align: left;
+}
 
+/* line 16, ../scss/base/_tables.scss */
 td {
   border-bottom: 1px solid #ddd;
-  padding: 0.875em 0; }
+  padding: 0.875em 0;
+}
 
+/* line 21, ../scss/base/_tables.scss */
 tr,
 td,
 th {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
+/* line 1, ../scss/base/_typography.scss */
 body {
   -webkit-font-feature-settings: "kern", "liga", "pnum";
   -moz-font-feature-settings: "kern", "liga", "pnum";
@@ -149,8 +198,10 @@ body {
   color: #333;
   font-family: "TiemposTextWeb-Regular", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-size: 1.25em;
-  line-height: 1.75; }
+  line-height: 1.75;
+}
 
+/* line 11, ../scss/base/_typography.scss */
 h1,
 h2,
 h3,
@@ -159,42 +210,59 @@ h5,
 h6 {
   font-family: "NHaasGroteskDSPro-75Bd", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
   font-weight: normal;
-  margin: 0 0 0.875em; }
+  margin: 0 0 0.875em;
+}
 
+/* line 23, ../scss/base/_typography.scss */
 h1 {
   font-size: 4rem;
   line-height: 1.1em;
   margin-bottom: 0.1em;
-  color: rgba(20, 28, 82, 0.8); }
+  color: rgba(20, 28, 82, 0.8);
+}
 
+/* line 30, ../scss/base/_typography.scss */
 p {
   margin: 0 auto 1.75em;
-  max-width: 800px; }
+  max-width: 800px;
+}
 
+/* line 36, ../scss/base/_typography.scss */
 em {
-  font-family: "TiemposTextWeb-RegularItalic", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif; }
+  font-family: "TiemposTextWeb-RegularItalic", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+}
 
+/* line 40, ../scss/base/_typography.scss */
 a {
   color: #2800D7;
   text-decoration: underline;
-  transition: color 0.1s linear; }
-  a:active, a:focus, a:hover {
-    color: #1a008b; }
-  a:active, a:focus {
-    outline: none; }
+  transition: color 0.1s linear;
+}
+/* line 45, ../scss/base/_typography.scss */
+a:active, a:focus, a:hover {
+  color: #1a008b;
+}
+/* line 51, ../scss/base/_typography.scss */
+a:active, a:focus {
+  outline: none;
+}
 
+/* line 57, ../scss/base/_typography.scss */
 hr {
   border-bottom: 1px solid #ddd;
   border-left: none;
   border-right: none;
   border-top: none;
-  margin: 1.75em 0; }
+  margin: 1.75em 0;
+}
 
+/* line 65, ../scss/base/_typography.scss */
 img,
 picture {
   margin: 0 auto;
   max-width: 100%;
-  display: block; }
+  display: block;
+}
 
 /*-- Edit color and typography in _variables.scss & _typography.scss -- */
 /*-- STYLES WE CONTROL -- */
@@ -216,167 +284,251 @@ picture {
 /*-- MEDIA QUERIES -- */
 /* MOBILE */
 @media screen and (max-width: 560px) {
+  /* line 4, ../scss/mediaqueries/_mobile.scss */
   .lede video {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+  }
 
+  /* line 8, ../scss/mediaqueries/_mobile.scss */
   header {
     width: 90%;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+  }
 
+  /* line 13, ../scss/mediaqueries/_mobile.scss */
   h1 {
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+  }
 
+  /* line 17, ../scss/mediaqueries/_mobile.scss */
   .dek {
     font-size: 1.25rem;
-    margin-bottom: 1.25rem; }
+    margin-bottom: 1.25rem;
+  }
 
+  /* line 22, ../scss/mediaqueries/_mobile.scss */
   .subhed {
-    font-size: 0.95rem; }
+    font-size: 0.95rem;
+  }
 
+  /* line 26, ../scss/mediaqueries/_mobile.scss */
   p {
     width: 90%;
     max-width: initial;
-    font-size: 0.8em; }
+    font-size: 0.8em;
+  }
 
+  /* line 32, ../scss/mediaqueries/_mobile.scss */
   .img_right, .img_left {
     float: none;
     margin: 0 auto 1rem;
-    width: 90%; }
+    width: 90%;
+  }
 
+  /* line 38, ../scss/mediaqueries/_mobile.scss */
   blockquote {
     padding: 0 1em 1em;
     margin: 0 auto;
-    width: 90%; }
+    width: 90%;
+  }
 
+  /* line 44, ../scss/mediaqueries/_mobile.scss */
   .pullquotes {
     font-size: 1.2em;
     line-height: 1.4em;
     float: none;
     width: 90%;
     margin: 1rem auto;
-    padding: 1rem auto; }
+    padding: 1rem auto;
+  }
 
+  /* line 53, ../scss/mediaqueries/_mobile.scss */
   .divider {
-    margin: 0 auto 0.75em; }
+    margin: 0 auto 0.75em;
+  }
 
+  /* line 58, ../scss/mediaqueries/_mobile.scss */
   #main ul {
-    width: 60%; }
+    width: 60%;
+  }
+  /* line 62, ../scss/mediaqueries/_mobile.scss */
   #main li {
     font-size: 0.75em;
-    line-height: 1.25em; }
+    line-height: 1.25em;
+  }
 
+  /* line 68, ../scss/mediaqueries/_mobile.scss */
   .video-js {
     min-width: 320px;
-    min-height: 160px; } }
+    min-height: 160px;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 560px) {
+  /* line 75, ../scss/mediaqueries/_mobile.scss */
   .video-js {
     min-width: 480px;
-    min-height: 240px; } }
+    min-height: 240px;
+  }
+}
 /* TABLET */
 @media screen and (min-width: 560px) and (max-width: 1023px) {
+  /* line 5, ../scss/mediaqueries/_tablet.scss */
   h1 {
-    font-size: 3rem; }
+    font-size: 3rem;
+  }
 
+  /* line 9, ../scss/mediaqueries/_tablet.scss */
   .dek {
     font-size: 2rem;
-    margin-bottom: 1.75rem; }
+    margin-bottom: 1.75rem;
+  }
 
+  /* line 14, ../scss/mediaqueries/_tablet.scss */
   .subhed {
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+  }
 
+  /* line 18, ../scss/mediaqueries/_tablet.scss */
   p {
     max-width: initial;
-    font-size: 0.9em; }
+    font-size: 0.9em;
+  }
 
+  /* line 24, ../scss/mediaqueries/_tablet.scss */
   .video-js {
     min-width: 1023px;
-    min-height: 511px; } }
+    min-height: 511px;
+  }
+}
 @media screen and (min-width: 560px) and (max-width: 767px) {
+  /* line 32, ../scss/mediaqueries/_tablet.scss */
   header, p, .pullquotes {
     width: 90%;
-    max-width: 100%; }
+    max-width: 100%;
+  }
 
+  /* line 37, ../scss/mediaqueries/_tablet.scss */
   .video-js {
     min-width: 480px;
-    min-height: 240px; }
+    min-height: 240px;
+  }
 
+  /* line 42, ../scss/mediaqueries/_tablet.scss */
   .img_right, .img_left {
     float: none;
     margin: 0 auto 1rem;
-    width: 90%; }
+    width: 90%;
+  }
 
+  /* line 49, ../scss/mediaqueries/_tablet.scss */
   #main ul {
-    width: 40%; } }
+    width: 40%;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 55, ../scss/mediaqueries/_tablet.scss */
   header, p, .pullquotes {
     width: 80%;
-    max-width: 100%; }
+    max-width: 100%;
+  }
 
+  /* line 60, ../scss/mediaqueries/_tablet.scss */
   .video-js {
     min-width: 768px;
-    min-height: 384px; }
+    min-height: 384px;
+  }
 
+  /* line 65, ../scss/mediaqueries/_tablet.scss */
   .img_right, .img_left {
-    width: 30rem; }
+    width: 30rem;
+  }
 
+  /* line 69, ../scss/mediaqueries/_tablet.scss */
   #main ul {
-    width: 30%; } }
+    width: 30%;
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
+  /* line 75, ../scss/mediaqueries/_tablet.scss */
   .video-js {
     min-width: 1024px;
-    min-height: 512px; } }
+    min-height: 512px;
+  }
+}
 /* RETINA */
 /* Print Styles
  ========================================================================== */
 @media print {
+  /* line 5, ../scss/mediaqueries/_print.scss */
   * {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
-    text-shadow: none !important; }
+    text-shadow: none !important;
+  }
 
+  /* line 12, ../scss/mediaqueries/_print.scss */
   a,
   a:visited {
-    text-decoration: underline; }
+    text-decoration: underline;
+  }
 
+  /* line 17, ../scss/mediaqueries/_print.scss */
   a[href]:after {
-    content: " (" attr(href) ")"; }
+    content: " (" attr(href) ")";
+  }
 
+  /* line 21, ../scss/mediaqueries/_print.scss */
   abbr[title]:after {
-    content: " (" attr(title) ")"; }
+    content: " (" attr(title) ")";
+  }
 
   /*Don't show links for img, or javascript/internal links*/
+  /* line 26, ../scss/mediaqueries/_print.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
-    content: ""; }
+    content: "";
+  }
 
+  /* line 30, ../scss/mediaqueries/_print.scss */
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
+  /* line 33, ../scss/mediaqueries/_print.scss */
   thead {
-    display: table-header-group; }
+    display: table-header-group;
+  }
 
+  /* line 35, ../scss/mediaqueries/_print.scss */
   tr,
   img {
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
+  /* line 38, ../scss/mediaqueries/_print.scss */
   img {
-    max-width: 100% !important; }
+    max-width: 100% !important;
+  }
 
   @page {
-    margin: 0.5cm; }
+    margin: 0.5cm;
+  }
+  /* line 42, ../scss/mediaqueries/_print.scss */
   p,
   h2,
   h3 {
     orphans: 3;
-    widows: 3; }
+    widows: 3;
+  }
 
+  /* line 46, ../scss/mediaqueries/_print.scss */
   h2,
   h3 {
-    page-break-after: avoid; } }
-
-/*# sourceMappingURL=main.css.map */
+    page-break-after: avoid;
+  }
+}
