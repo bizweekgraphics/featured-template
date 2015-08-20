@@ -120,6 +120,25 @@
 
         <div id="main">
 
+          <!-- LEDE W/TEXT OVER & PARALLAX -->
+
+          <div class="lede-text-overlay-parallax" data-parallax="scroll" data-image-src="http://placehold.it/2000x1200">
+            <div class="lede-content">
+              <div class="hed">
+                <h1>Headline TK Goes Here</h1>
+              </div>
+              <div class="dek">Dek text TKTK goes here. Lorem ipsum dolor sit amet.</div>
+              <div>
+                <p class="byline-feat">By Author Name | July 23, 2015</p>
+              </div>
+              <div>
+                <p class="byline-feat">Photographs by Photographer Name</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEDE W/TEXT UNDER FULL-WIDTH IMG -->
+
           <div id="footer">
             <div class="container">
               <div class="left"></div>
@@ -136,14 +155,17 @@
         <!-- Optional Scripts-->
 
         <!--
-        <script src="http://www.bloomberg.com/graphics/assets/js/vendor/jquery.min.js?"></script>
         <script src="http://www.bloomberg.com/graphics/assets/js/vendor/topojson-v1.6.8.min.js?"></script>
         <script src="http://www.bloomberg.com/graphics/assets/js/vendor/queue.v1.min.js?"></script>
+        <script src="js/skrollr.min.js"></script>
+        <script src="js/wow.min.js"></script>
         -->
 
         <!-- Required Scripts-->
+        <script src="http://www.bloomberg.com/graphics/assets/js/vendor/jquery.min.js?"></script>
         <script src="http://www.bloomberg.com/graphics/assets/js/vendor/lodash.underscore.min.js?"></script>
         <script src="http://www.bloomberg.com/graphics/assets/js/vendor/d3.v3.min.js?"></script>
+        <script src="js/parallax.min.js"></script>
 
         <script type="text/javascript">
 
@@ -184,6 +206,26 @@
               d3.select('#full-header').classed('stuck', fixedHeader)
               d3.select('#full-header-space').classed('stuck', fixedHeader)
             }
+          });
+
+          //WOW ANIMATIONS
+
+          // wow = new WOW(
+          // {
+          //   boxClass:   'reveal',
+          //   animateClass: 'animated',
+          //   offset:     100,
+          //   mobile: false,
+          // }
+          // );
+          // wow.init();
+
+          //TERMINAL LINKS
+
+          $(document).ready(function(){
+
+            if(isTerminal) $("a").attr("href", "#");
+
           });
 
 

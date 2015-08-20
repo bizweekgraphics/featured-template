@@ -2,4 +2,51 @@
 
 /*--- LEDE W/ TEXT OVER ---*/
 
+.lede-text-overlay-parallax {
+	background:transparent center no-repeat;
+	background-size:cover;
+	overflow: hidden;
+	height: 100%;
+	min-height: 600px;
+
+	#main {
+		height:100%;
+		overflow:visible;
+		position:relative;
+	}
+	
+	.lede-content {
+		width: 80%;
+		max-width: 700px;
+		margin: 15% auto 30px 15%;
+	}
+
+	.lede-content h1 {
+		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+		color: #000;
+		background-color: #fff;
+		display: inline;
+	}
+
+	.dek {
+		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+		font-size: 30px;
+		line-height: 36px;
+		display: inline;
+		text-align: left;
+		padding: 0;
+		background-color: #fff;
+	}
+
+	.byline-feat {
+		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+		color: #000;
+		margin: 5px 0;
+		background-color: #fff;
+		display: inline;
+	}
+}
+
 /*--- LEDE W/ TEXT UNDER ---*/
+
+/*--- VIDEO LEDE ---*/
