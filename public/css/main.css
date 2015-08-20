@@ -267,8 +267,13 @@ picture {
 /*-- Edit color and typography in _variables.scss & _typography.scss -- */
 /*-- STYLES WE CONTROL -- */
 /*------------ LEDE STYLES ------------*/
-/*--- LEDE W/ TEXT OVER ---*/
-/* line 5, ../scss/layout/_ledes.scss */
+/* line 3, ../scss/layout/_ledes.scss */
+#footer {
+  width: inherit;
+}
+
+/*--- LEDE W/ TEXT OVER & PARALLAX ---*/
+/* line 9, ../scss/layout/_ledes.scss */
 .lede-text-overlay-parallax {
   background: transparent center no-repeat;
   background-size: cover;
@@ -276,26 +281,26 @@ picture {
   height: 100%;
   min-height: 600px;
 }
-/* line 12, ../scss/layout/_ledes.scss */
+/* line 16, ../scss/layout/_ledes.scss */
 .lede-text-overlay-parallax #main {
   height: 100%;
   overflow: visible;
   position: relative;
 }
-/* line 18, ../scss/layout/_ledes.scss */
+/* line 22, ../scss/layout/_ledes.scss */
 .lede-text-overlay-parallax .lede-content {
   width: 80%;
   max-width: 700px;
   margin: 15% auto 30px 15%;
 }
-/* line 24, ../scss/layout/_ledes.scss */
+/* line 28, ../scss/layout/_ledes.scss */
 .lede-text-overlay-parallax .lede-content h1 {
   font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
   color: #000;
   background-color: #fff;
   display: inline;
 }
-/* line 31, ../scss/layout/_ledes.scss */
+/* line 35, ../scss/layout/_ledes.scss */
 .lede-text-overlay-parallax .dek {
   font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
   font-size: 30px;
@@ -305,7 +310,7 @@ picture {
   padding: 0;
   background-color: #fff;
 }
-/* line 41, ../scss/layout/_ledes.scss */
+/* line 45, ../scss/layout/_ledes.scss */
 .lede-text-overlay-parallax .byline-feat {
   font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
   color: #000;
@@ -315,6 +320,37 @@ picture {
 }
 
 /*--- LEDE W/ TEXT UNDER ---*/
+/* line 56, ../scss/layout/_ledes.scss */
+.lede-text-under {
+  width: 100%;
+  padding: 0;
+}
+/* line 60, ../scss/layout/_ledes.scss */
+.lede-text-under .lede-content {
+  max-width: 700px;
+  margin: 30px auto 30px 15%;
+}
+/* line 65, ../scss/layout/_ledes.scss */
+.lede-text-under .lede-content h1 {
+  font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+  color: #000;
+}
+/* line 70, ../scss/layout/_ledes.scss */
+.lede-text-under .dek {
+  font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+/* line 79, ../scss/layout/_ledes.scss */
+.lede-text-under .byline-feat {
+  color: #767676;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
 /*--- VIDEO LEDE ---*/
 /*------------ IMAGES STYLES ------------*/
 /*------------  QUOTE STYLES ------------*/

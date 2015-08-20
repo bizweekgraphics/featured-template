@@ -1,6 +1,10 @@
 /*------------ LEDE STYLES ------------*/
 
-/*--- LEDE W/ TEXT OVER ---*/
+#footer {
+	width: inherit;
+}
+
+/*--- LEDE W/ TEXT OVER & PARALLAX ---*/
 
 .lede-text-overlay-parallax {
 	background:transparent center no-repeat;
@@ -48,5 +52,36 @@
 }
 
 /*--- LEDE W/ TEXT UNDER ---*/
+
+.lede-text-under {
+	width: 100%;
+	padding: 0;
+
+	.lede-content {
+		max-width: 700px;
+		margin: 30px auto 30px 15%;
+	}
+
+	.lede-content h1 {
+		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+		color: #000;
+	}
+
+	.dek {
+		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+		font-size: 30px;
+		line-height: 36px;
+		text-align: left;
+		padding: 0;
+		margin: 0;
+	}
+
+	.byline-feat {
+		color: #767676;
+		margin: 5px 0;
+		font-size: 16px;
+	}
+
+}
 
 /*--- VIDEO LEDE ---*/
