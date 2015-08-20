@@ -268,24 +268,25 @@ picture {
 /*-- STYLES WE CONTROL -- */
 /*------------ LEDE STYLES ------------*/
 /* line 3, ../scss/layout/_ledes.scss */
+#main {
+  height: 100%;
+  overflow: visible;
+  position: relative;
+}
+
+/* line 9, ../scss/layout/_ledes.scss */
 #footer {
   width: inherit;
 }
 
 /*--- LEDE W/ TEXT OVER & PARALLAX ---*/
-/* line 9, ../scss/layout/_ledes.scss */
+/* line 15, ../scss/layout/_ledes.scss */
 .lede-text-overlay-parallax {
   background: transparent center no-repeat;
   background-size: cover;
   overflow: hidden;
   height: 100%;
   min-height: 600px;
-}
-/* line 16, ../scss/layout/_ledes.scss */
-.lede-text-overlay-parallax #main {
-  height: 100%;
-  overflow: visible;
-  position: relative;
 }
 /* line 22, ../scss/layout/_ledes.scss */
 .lede-text-overlay-parallax .lede-content {
@@ -352,6 +353,54 @@ picture {
 }
 
 /*--- VIDEO LEDE ---*/
+/* line 89, ../scss/layout/_ledes.scss */
+.lede-video {
+  width: 100%;
+}
+/* line 92, ../scss/layout/_ledes.scss */
+.lede-video video {
+  min-height: 100vh;
+  min-width: 100%;
+  margin-bottom: 30px;
+}
+/* line 98, ../scss/layout/_ledes.scss */
+.lede-video .lede-content {
+  width: 80%;
+  max-width: 700px;
+  margin: -40% auto 0 15%;
+  position: relative;
+  z-index: 1;
+}
+/* line 106, ../scss/layout/_ledes.scss */
+.lede-video .lede-content h1 {
+  font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+  display: inline;
+}
+/* line 113, ../scss/layout/_ledes.scss */
+.lede-video .dek {
+  font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  display: inline;
+  text-align: left;
+  padding: 0;
+  background-color: #fff;
+}
+/* line 123, ../scss/layout/_ledes.scss */
+.lede-video .byline-feat {
+  font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+  color: #000;
+  margin: 5px 0;
+  background-color: #fff;
+  display: inline;
+}
+/* line 131, ../scss/layout/_ledes.scss */
+.lede-video .mobile-lede {
+  display: none;
+}
+
 /*------------ IMAGES STYLES ------------*/
 /*------------  QUOTE STYLES ------------*/
 /*--- PULL QUOTE ---*/

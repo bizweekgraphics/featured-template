@@ -1,5 +1,11 @@
 /*------------ LEDE STYLES ------------*/
 
+#main {
+	height:100%;
+	overflow:visible;
+	position:relative;
+}
+
 #footer {
 	width: inherit;
 }
@@ -12,12 +18,6 @@
 	overflow: hidden;
 	height: 100%;
 	min-height: 600px;
-
-	#main {
-		height:100%;
-		overflow:visible;
-		position:relative;
-	}
 	
 	.lede-content {
 		width: 80%;
@@ -85,3 +85,53 @@
 }
 
 /*--- VIDEO LEDE ---*/
+
+.lede-video {
+	width: 100%;
+
+	video {
+		min-height: 100vh;
+		min-width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.lede-content {
+		width: 80%;
+		max-width: 700px;
+		margin: -40% auto 0 15%;
+		position: relative;
+		z-index: 1;
+	}
+
+	.lede-content h1 {
+		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+		color: #000;
+		background-color: #fff;
+		display: inline;
+	}
+
+	.dek {
+		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+		font-size: 30px;
+		line-height: 36px;
+		display: inline;
+		text-align: left;
+		padding: 0;
+		background-color: #fff;
+	}
+
+	.byline-feat {
+		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+		color: #000;
+		margin: 5px 0;
+		background-color: #fff;
+		display: inline;
+	}
+
+	.mobile-lede {
+		display: none;
+	}
+
+
+}
+
