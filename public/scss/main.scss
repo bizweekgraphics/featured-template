@@ -1,9 +1,11 @@
 /* page compilation --*/
 
 @import "bourbon/bourbon";
-@import "base/base"; /*-- Edit color and typography in _variables.scss & _typography.scss -- */
+@import "base/base"; /*-- Edit color and typography in _variables.scss & _typography.scss.
+						  Check font family options in public/scss/bourbon/addons/_font-stacks.scss: --*/
 
 /*-- STYLES WE CONTROL -- */
+@import "layout/example_page"; /*-- this is where the style for this site goes --*/
 @import "layout/ledes";
 @import "layout/images";
 @import "layout/quotes";

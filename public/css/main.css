@@ -264,8 +264,32 @@ picture {
   display: block;
 }
 
-/*-- Edit color and typography in _variables.scss & _typography.scss -- */
+                     /*-- Edit color and typography in _variables.scss & _typography.scss.
+						  Check font family options in public/scss/bourbon/addons/_font-stacks.scss: --*/
 /*-- STYLES WE CONTROL -- */
+/*------------  STYLES FOR THE EXAMPLE PAGES GOES HERE ------------*/
+/* line 5, ../scss/layout/_example_page.scss */
+.example_title, .example_subtitle {
+  color: #444;
+  text-transform: uppercase;
+  font-family: "NHaasGroteskDSPro-75Bd", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
+  font-weight: 600;
+  max-width: 1215px;
+}
+
+/* line 14, ../scss/layout/_example_page.scss */
+.example_title {
+  font-size: 2em;
+  margin: 2em auto 0;
+}
+
+/* line 19, ../scss/layout/_example_page.scss */
+.example_subtitle {
+  font-size: 1em;
+  margin: 3em auto 0;
+}
+
+/*-- this is where the style for this site goes --*/
 /*------------ LEDE STYLES ------------*/
 /* line 3, ../scss/layout/_ledes.scss */
 #main {

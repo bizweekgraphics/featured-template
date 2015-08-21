@@ -1,0 +1,22 @@
+/*------------  STYLES FOR THE EXAMPLE PAGES GOES HERE ------------*/
+
+
+// Typography
+.example_title, .example_subtitle {
+	color: #444;
+	text-transform: uppercase;
+	font-family: $NHaas-bold;
+	font-weight: 600;
+	max-width: 1215px;
+
+}
+
+.example_title {
+	font-size: 2em;
+	margin: 2em auto 0;
+}
+
+.example_subtitle {
+	font-size: 1em;
+	margin: 3em auto 0;
+}
