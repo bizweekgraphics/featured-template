@@ -318,15 +318,15 @@ picture {
   max-width: 700px;
   margin: 15% auto 30px 15%;
 }
-/* line 28, ../scss/layout/_ledes.scss */
+/* line 27, ../scss/layout/_ledes.scss */
 .lede-text-overlay-parallax .lede-content h1 {
   font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
   color: #000;
   background-color: #fff;
   display: inline;
 }
-/* line 35, ../scss/layout/_ledes.scss */
-.lede-text-overlay-parallax .dek {
+/* line 34, ../scss/layout/_ledes.scss */
+.lede-text-overlay-parallax .lede-content .dek {
   font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -335,8 +335,8 @@ picture {
   padding: 0;
   background-color: #fff;
 }
-/* line 45, ../scss/layout/_ledes.scss */
-.lede-text-overlay-parallax .byline-feat {
+/* line 44, ../scss/layout/_ledes.scss */
+.lede-text-overlay-parallax .lede-content .byline-feat {
   font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
   color: #000;
   margin: 5px 0;
@@ -345,12 +345,12 @@ picture {
 }
 
 /*--- LEDE W/ TEXT UNDER ---*/
-/* line 56, ../scss/layout/_ledes.scss */
+/* line 57, ../scss/layout/_ledes.scss */
 .lede-text-under {
   width: 100%;
   padding: 0;
 }
-/* line 60, ../scss/layout/_ledes.scss */
+/* line 61, ../scss/layout/_ledes.scss */
 .lede-text-under .lede-content {
   max-width: 700px;
   margin: 30px auto 30px 15%;
@@ -361,7 +361,7 @@ picture {
   color: #000;
 }
 /* line 70, ../scss/layout/_ledes.scss */
-.lede-text-under .dek {
+.lede-text-under .lede-content .dek {
   font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -370,24 +370,24 @@ picture {
   margin: 0;
 }
 /* line 79, ../scss/layout/_ledes.scss */
-.lede-text-under .byline-feat {
+.lede-text-under .lede-content .byline-feat {
   color: #767676;
   margin: 5px 0;
   font-size: 16px;
 }
 
 /*--- VIDEO LEDE ---*/
-/* line 89, ../scss/layout/_ledes.scss */
+/* line 90, ../scss/layout/_ledes.scss */
 .lede-video {
   width: 100%;
 }
-/* line 92, ../scss/layout/_ledes.scss */
+/* line 93, ../scss/layout/_ledes.scss */
 .lede-video video {
   min-height: 100vh;
   min-width: 100%;
   margin-bottom: 30px;
 }
-/* line 98, ../scss/layout/_ledes.scss */
+/* line 99, ../scss/layout/_ledes.scss */
 .lede-video .lede-content {
   width: 80%;
   max-width: 700px;
@@ -403,7 +403,7 @@ picture {
   display: inline;
 }
 /* line 113, ../scss/layout/_ledes.scss */
-.lede-video .dek {
+.lede-video .lede-content .dek {
   font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -413,14 +413,14 @@ picture {
   background-color: #fff;
 }
 /* line 123, ../scss/layout/_ledes.scss */
-.lede-video .byline-feat {
+.lede-video .lede-content .byline-feat {
   font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
   color: #000;
   margin: 5px 0;
   background-color: #fff;
   display: inline;
 }
-/* line 131, ../scss/layout/_ledes.scss */
+/* line 132, ../scss/layout/_ledes.scss */
 .lede-video .mobile-lede {
   display: none;
 }
