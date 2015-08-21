@@ -17,7 +17,7 @@
 ///   }
 
 @mixin clearfix {
-  &::after {
+  &::before, &::after {
     clear: both;
     content: "";
     display: table;

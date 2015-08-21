@@ -268,43 +268,75 @@ picture {
 						  Check font family options in public/scss/bourbon/addons/_font-stacks.scss: --*/
 /*-- STYLES WE CONTROL -- */
 /*------------  STYLES FOR THE EXAMPLE PAGES GOES HERE ------------*/
-/* line 5, ../scss/layout/_example_page.scss */
+/* line 4, ../scss/layout/_example_page.scss */
+.example_headers {
+  max-width: 1215px;
+  margin: 0 auto;
+}
+/* line 20, ../scss/bourbon/addons/_clearfix.scss */
+.example_headers::before, .example_headers::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 11, ../scss/layout/_example_page.scss */
 .example_title, .example_subtitle {
   color: #444;
-  text-transform: uppercase;
-  font-family: "NHaasGroteskDSPro-75Bd", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
-  font-weight: 600;
-  max-width: 1215px;
 }
 
-/* line 14, ../scss/layout/_example_page.scss */
+/* line 20, ../scss/layout/_example_page.scss */
 .example_title {
+  font-family: "TiemposTextWeb-Semibold", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-size: 2em;
   margin: 2em auto 0;
+  border-bottom: 1px solid #2d2d35;
+  padding-bottom: 0.25em;
 }
 
-/* line 19, ../scss/layout/_example_page.scss */
+/* line 28, ../scss/layout/_example_page.scss */
 .example_subtitle {
+  font-family: "TiemposTextWeb-RegularItalic", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-size: 1em;
-  margin: 3em auto 0;
+  margin: 3em auto 0.5em;
+  color: #333;
+  display: inline-block;
+  background-color: rgba(249, 70, 15, 0.5);
+  padding: 0 0.25em;
 }
 
 /*-- this is where the style for this site goes --*/
 /*------------ LEDE STYLES ------------*/
-/* line 3, ../scss/layout/_ledes.scss */
+/* line 8, ../scss/layout/_ledes.scss */
 #main {
   height: 100%;
   overflow: visible;
   position: relative;
 }
 
-/* line 9, ../scss/layout/_ledes.scss */
+/* line 14, ../scss/layout/_ledes.scss */
 #footer {
   width: inherit;
 }
 
+/*------------ COMMON STYLES ------------*/
+/* line 21, ../scss/layout/_ledes.scss */
+.lede-content {
+  max-width: 700px;
+}
+/* line 24, ../scss/layout/_ledes.scss */
+.lede-content h1 {
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
+}
+
+/* line 29, ../scss/layout/_ledes.scss */
+.dek {
+  font: 30px/36px "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  padding: 0;
+}
+
 /*--- LEDE W/ TEXT OVER & PARALLAX ---*/
-/* line 15, ../scss/layout/_ledes.scss */
+/* line 37, ../scss/layout/_ledes.scss */
 .lede-text-overlay-parallax {
   background: transparent center no-repeat;
   background-size: cover;
@@ -312,32 +344,27 @@ picture {
   height: 100%;
   min-height: 600px;
 }
-/* line 22, ../scss/layout/_ledes.scss */
+/* line 44, ../scss/layout/_ledes.scss */
 .lede-text-overlay-parallax .lede-content {
   width: 80%;
-  max-width: 700px;
   margin: 15% auto 30px 15%;
 }
-/* line 28, ../scss/layout/_ledes.scss */
+/* line 48, ../scss/layout/_ledes.scss */
 .lede-text-overlay-parallax .lede-content h1 {
-  font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
   color: #000;
   background-color: #fff;
   display: inline;
 }
-/* line 35, ../scss/layout/_ledes.scss */
+/* line 55, ../scss/layout/_ledes.scss */
 .lede-text-overlay-parallax .dek {
-  font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
-  font-size: 30px;
   line-height: 36px;
   display: inline;
   text-align: left;
-  padding: 0;
   background-color: #fff;
 }
-/* line 45, ../scss/layout/_ledes.scss */
+/* line 62, ../scss/layout/_ledes.scss */
 .lede-text-overlay-parallax .byline-feat {
-  font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
   color: #000;
   margin: 5px 0;
   background-color: #fff;
@@ -345,31 +372,25 @@ picture {
 }
 
 /*--- LEDE W/ TEXT UNDER ---*/
-/* line 56, ../scss/layout/_ledes.scss */
+/* line 73, ../scss/layout/_ledes.scss */
 .lede-text-under {
   width: 100%;
   padding: 0;
 }
-/* line 60, ../scss/layout/_ledes.scss */
+/* line 77, ../scss/layout/_ledes.scss */
 .lede-text-under .lede-content {
-  max-width: 700px;
   margin: 30px auto 30px 15%;
 }
-/* line 65, ../scss/layout/_ledes.scss */
+/* line 80, ../scss/layout/_ledes.scss */
 .lede-text-under .lede-content h1 {
-  font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
   color: #000;
 }
-/* line 70, ../scss/layout/_ledes.scss */
+/* line 85, ../scss/layout/_ledes.scss */
 .lede-text-under .dek {
-  font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
-  font-size: 30px;
-  line-height: 36px;
   text-align: left;
-  padding: 0;
   margin: 0;
 }
-/* line 79, ../scss/layout/_ledes.scss */
+/* line 90, ../scss/layout/_ledes.scss */
 .lede-text-under .byline-feat {
   color: #767676;
   margin: 5px 0;
@@ -377,58 +398,126 @@ picture {
 }
 
 /*--- VIDEO LEDE ---*/
-/* line 89, ../scss/layout/_ledes.scss */
+/* line 100, ../scss/layout/_ledes.scss */
 .lede-video {
   width: 100%;
+  height: auto;
+  position: relative;
 }
-/* line 92, ../scss/layout/_ledes.scss */
+/* line 105, ../scss/layout/_ledes.scss */
 .lede-video video {
   min-height: 100vh;
   min-width: 100%;
   margin-bottom: 30px;
 }
-/* line 98, ../scss/layout/_ledes.scss */
+/* line 111, ../scss/layout/_ledes.scss */
 .lede-video .lede-content {
   width: 80%;
-  max-width: 700px;
   margin: -40% auto 0 15%;
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
-/* line 106, ../scss/layout/_ledes.scss */
+/* line 117, ../scss/layout/_ledes.scss */
 .lede-video .lede-content h1 {
-  font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
   color: #000;
   background-color: #fff;
   display: inline;
 }
-/* line 113, ../scss/layout/_ledes.scss */
+/* line 124, ../scss/layout/_ledes.scss */
 .lede-video .dek {
-  font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
-  font-size: 30px;
-  line-height: 36px;
   display: inline;
   text-align: left;
-  padding: 0;
   background-color: #fff;
 }
-/* line 123, ../scss/layout/_ledes.scss */
+/* line 130, ../scss/layout/_ledes.scss */
 .lede-video .byline-feat {
-  font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
   color: #000;
   margin: 5px 0;
   background-color: #fff;
   display: inline;
 }
-/* line 131, ../scss/layout/_ledes.scss */
+/* line 138, ../scss/layout/_ledes.scss */
 .lede-video .mobile-lede {
   display: none;
 }
 
 /*------------ IMAGES STYLES ------------*/
+/* line 3, ../scss/layout/_images.scss */
+figcaption, .caption {
+  font-size: 0.7em;
+  font-family: "NHaasGroteskDSPro-55Rg", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: right;
+}
+
+/* line 10, ../scss/layout/_images.scss */
+figcaption {
+  margin-right: 0.325em;
+}
+
+/* line 14, ../scss/layout/_images.scss */
+.caption {
+  width: 90%;
+  margin: -2em auto 2em;
+  max-width: 1280px;
+}
+
+/* line 20, ../scss/layout/_images.scss */
+.img_full {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto 3rem;
+}
+
+/* line 26, ../scss/layout/_images.scss */
+.img_left, .img_right {
+  width: 38rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* line 32, ../scss/layout/_images.scss */
+.img_left {
+  float: left;
+}
+
+/* line 36, ../scss/layout/_images.scss */
+.img_right {
+  float: right;
+}
+
 /*------------  QUOTE STYLES ------------*/
-/*--- PULL QUOTE ---*/
 /*---  BLOCKQUOTE ---*/
+/* line 4, ../scss/layout/_quotes.scss */
+blockquote {
+  font-size: 0.9em;
+  margin: 2em auto;
+  padding: 2em;
+  width: 76%;
+}
+/* line 14, ../scss/layout/_quotes.scss */
+blockquote p:last-of-type {
+  margin-bottom: 0;
+}
+
+/*--- PULL QUOTE ---*/
+/* line 22, ../scss/layout/_quotes.scss */
+.pullquotes {
+  font-size: 1.75em;
+  line-height: 3rem;
+  position: relative;
+  width: 58%;
+  max-width: 48rem;
+  margin: 1.5em auto;
+  color: rgba(20, 28, 82, 0.8);
+  padding: 1.25em 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "TiemposTextWeb-Semibold", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+}
+
 /*------------  SIDEBAR STYLES ------------*/
 /*--- LEFT SIDEBAR ---*/
 /*---  RIGHT SIDEBAR ---*/

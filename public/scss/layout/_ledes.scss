@@ -1,3 +1,8 @@
+$HaasBold: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
+$black: #000;
+$white: #fff;
+
+
 /*------------ LEDE STYLES ------------*/
 
 #main {
@@ -10,6 +15,23 @@
 	width: inherit;
 }
 
+
+/*------------ COMMON STYLES ------------*/
+
+.lede-content {
+	max-width: 700px;
+	
+	h1 {
+		font-family: $HaasBold;
+	}
+}
+
+.dek {
+	font: 30px/36px $HaasBold;
+	padding: 0;
+}
+
+
 /*--- LEDE W/ TEXT OVER & PARALLAX ---*/
 
 .lede-text-overlay-parallax {
@@ -21,32 +43,27 @@
 	
 	.lede-content {
 		width: 80%;
-		max-width: 700px;
 		margin: 15% auto 30px 15%;
-	}
-
-	.lede-content h1 {
-		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
-		color: #000;
-		background-color: #fff;
-		display: inline;
+		
+		h1 {
+			color: $black;
+			background-color: $white;
+			display: inline;
+		}
 	}
 
 	.dek {
-		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
-		font-size: 30px;
 		line-height: 36px;
 		display: inline;
 		text-align: left;
-		padding: 0;
-		background-color: #fff;
+		background-color: $white;
 	}
 
 	.byline-feat {
-		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
-		color: #000;
+		font-family: $HaasBold;
+		color: $black;
 		margin: 5px 0;
-		background-color: #fff;
+		background-color: $white;
 		display: inline;
 	}
 }
@@ -58,21 +75,15 @@
 	padding: 0;
 
 	.lede-content {
-		max-width: 700px;
 		margin: 30px auto 30px 15%;
-	}
-
-	.lede-content h1 {
-		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
-		color: #000;
+	
+		h1 {
+			color: $black;
+		}
 	}
 
 	.dek {
-		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
-		font-size: 30px;
-		line-height: 36px;
 		text-align: left;
-		padding: 0;
 		margin: 0;
 	}
 
@@ -88,6 +99,8 @@
 
 .lede-video {
 	width: 100%;
+	height: auto;
+	position: relative;
 
 	video {
 		min-height: 100vh;
@@ -97,34 +110,28 @@
 
 	.lede-content {
 		width: 80%;
-		max-width: 700px;
 		margin: -40% auto 0 15%;
-		position: relative;
+		position: absolute;
 		z-index: 1;
-	}
-
-	.lede-content h1 {
-		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
-		color: #000;
-		background-color: #fff;
-		display: inline;
+		
+		h1 {
+			color: #000;
+			background-color: $white;
+			display: inline;
+		}
 	}
 
 	.dek {
-		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
-		font-size: 30px;
-		line-height: 36px;
 		display: inline;
 		text-align: left;
-		padding: 0;
-		background-color: #fff;
+		background-color: $white;
 	}
 
 	.byline-feat {
-		font-family: 'HaasDisplayBold', Helvetica, Arial, sans-serif;
-		color: #000;
+		font-family: $HaasBold;
+		color: $black;
 		margin: 5px 0;
-		background-color: #fff;
+		background-color: $white;
 		display: inline;
 	}
 

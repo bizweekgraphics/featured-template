@@ -1,1 +1,38 @@
 /*------------ IMAGES STYLES ------------*/
+
+figcaption, .caption {
+	font-size: 0.7em;
+	font-family: $NHaas;
+	color: rgba($black, 0.6);
+	text-align: right;
+}
+
+figcaption {
+	margin-right: 0.325em;
+}
+
+.caption {
+	width: 90%;
+	margin: -2em auto 2em;
+	max-width: 1280px;
+}
+
+.img_full {
+	width: 90%;
+	max-width: 1280px;
+	margin: 0 auto 3rem;
+}
+
+.img_left, .img_right {
+	width: 38rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+}
+
+.img_left {
+	float: left;
+}
+
+.img_right {
+	float: right;
+}
