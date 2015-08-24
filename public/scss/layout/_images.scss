@@ -12,6 +12,7 @@ figcaption, .caption {
 
 figcaption {
 	margin-right: 0.325em;
+	margin-top: 0.3em;
 }
 
 .caption {
@@ -46,4 +47,15 @@ figcaption {
 
 .img_right {
 	float: right;
+}
+
+.img_parallax {
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+}
+
+.img_parallax + .photo-info {
+	margin-left: 20px;
+	margin-right: 20px;
 }
