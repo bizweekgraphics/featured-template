@@ -183,3 +183,44 @@ $white: #fff;
 	}
 }
 
+/*--- LEDE W/FULL-WIDTH IMAGE & TEXT OVERLAY ---*/
+
+.lede-full-width-img {
+	width: 100%;
+	height: auto;
+	position: relative;
+
+	.lede-img {
+		min-height: 100vh;
+		min-width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.lede-content {
+		width: 80%;
+		margin: -40% auto 0 15%;
+		position: absolute;
+		z-index: 1;
+		
+		h1 {
+			color: $black;
+			background-color: $white;
+			display: inline;
+		}
+
+		.dek {
+			display: inline;
+			text-align: left;
+			background-color: $white;
+		}
+
+		.byline-feat {
+			font-family: $HaasBold;
+			color: $black;
+			margin: 5px 0;
+			background-color: $white;
+			display: inline;
+		}
+	}
+}
+

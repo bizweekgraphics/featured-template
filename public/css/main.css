@@ -482,6 +482,47 @@ picture {
   font-size: 21px;
 }
 
+/*--- LEDE W/FULL-WIDTH IMAGE & TEXT OVERLAY ---*/
+/* line 188, ../scss/layout/_ledes.scss */
+.lede-full-width-img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+/* line 193, ../scss/layout/_ledes.scss */
+.lede-full-width-img .lede-img {
+  min-height: 100vh;
+  min-width: 100%;
+  margin-bottom: 30px;
+}
+/* line 199, ../scss/layout/_ledes.scss */
+.lede-full-width-img .lede-content {
+  width: 80%;
+  margin: -40% auto 0 15%;
+  position: absolute;
+  z-index: 1;
+}
+/* line 205, ../scss/layout/_ledes.scss */
+.lede-full-width-img .lede-content h1 {
+  color: #000;
+  background-color: #fff;
+  display: inline;
+}
+/* line 211, ../scss/layout/_ledes.scss */
+.lede-full-width-img .lede-content .dek {
+  display: inline;
+  text-align: left;
+  background-color: #fff;
+}
+/* line 217, ../scss/layout/_ledes.scss */
+.lede-full-width-img .lede-content .byline-feat {
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  color: #000;
+  margin: 5px 0;
+  background-color: #fff;
+  display: inline;
+}
+
 /*------------ IMAGES STYLES ------------*/
 /* line 3, ../scss/layout/_images.scss */
 figcaption, .caption {
@@ -544,13 +585,13 @@ blockquote p:last-of-type {
 /*--- PULL QUOTE ---*/
 /* line 22, ../scss/layout/_quotes.scss */
 .pullquotes {
-  font-size: 1.75em;
+  font-size: 2em;
   line-height: 3rem;
   position: relative;
   width: 58%;
   max-width: 48rem;
   margin: 1.5em auto;
-  color: rgba(20, 28, 82, 0.8);
+  color: #2800D7;
   padding: 1.25em 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -566,6 +607,23 @@ blockquote p:last-of-type {
 /*------------  VIDEOS & DAVA VIZ EMBEDS STYLES ------------*/
 /*------------  VIDEOS STYLES ------------*/
 /*------------  INTERACTIVES STYLES ------------*/
+/*-- BODY COPY STYLES -- */
+/*-- CENTERED COLUMN -- */
+/* line 5, ../scss/layout/_body.scss */
+p {
+  width: 65%;
+  max-width: 720px;
+  margin: 30px auto;
+  font: 18px/1.6em 'TiemposTextWeb-Regular', Georgia, Times, serif;
+  color: #2d2d35;
+}
+/* line 12, ../scss/layout/_body.scss */
+p a {
+  color: #2d2d35;
+  text-decoration: none;
+  border-bottom: 2px solid #2800D7;
+}
+
 /*-- MEDIA QUERIES -- */
 /* MOBILE */
 @media screen and (max-width: 560px) {
