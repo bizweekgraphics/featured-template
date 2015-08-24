@@ -85,7 +85,7 @@
 	
 	.video-js {
 		min-width: 480px;
-		min-height: 240px;
+		min-height: 270px;
 	}
 
 	.img_right, .img_left {
@@ -107,8 +107,8 @@
 	}
 
 	.video-js {
-		min-width: 768px;
-		min-height: 384px;
+		min-width: 730px;
+		min-height: 411px;
 	}
 
 	.img_right, .img_left {
@@ -123,6 +123,6 @@
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
 	.video-js {
 		min-width: 1024px;
-		min-height: 512px;
+		min-height: 576px;
 	}
 }

@@ -567,6 +567,13 @@ figcaption {
 }
 
 /* line 37, ../scss/layout/_images.scss */
+.img_column {
+  width: 60%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* line 43, ../scss/layout/_images.scss */
 .img_left, .img_right {
   width: 38rem;
   max-width: 500px;
@@ -574,27 +581,45 @@ figcaption {
   margin-bottom: 0;
 }
 
-/* line 44, ../scss/layout/_images.scss */
+/* line 50, ../scss/layout/_images.scss */
 .img_left {
   float: left;
 }
 
-/* line 48, ../scss/layout/_images.scss */
+/* line 54, ../scss/layout/_images.scss */
 .img_right {
   float: right;
 }
 
-/* line 52, ../scss/layout/_images.scss */
+/* line 58, ../scss/layout/_images.scss */
 .img_parallax {
   height: 100vh;
   width: 100%;
   margin: 0;
 }
 
-/* line 58, ../scss/layout/_images.scss */
+/* line 64, ../scss/layout/_images.scss */
 .img_parallax + .photo-info {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+/*------------ VIDEO STYLES ------------*/
+/* line 71, ../scss/layout/_images.scss */
+.video {
+  margin: 40px auto;
+}
+
+/* line 75, ../scss/layout/_images.scss */
+.video-js {
+  margin: 0 auto;
+  min-width: 970px;
+  min-height: 546px;
+}
+
+/* line 81, ../scss/layout/_images.scss */
+.terminal .video {
+  display: none;
 }
 
 /*------------  QUOTE STYLES ------------*/
@@ -655,6 +680,11 @@ p a {
   color: #2d2d35;
   text-decoration: none;
   border-bottom: 2px solid #2800D7;
+}
+
+/* line 19, ../scss/layout/_body.scss */
+.terminal p a {
+  border-bottom: none;
 }
 
 /*-- MEDIA QUERIES -- */
@@ -791,14 +821,14 @@ p a {
   /* line 124, ../scss/mediaqueries/_mobile.scss */
   .video-js {
     min-width: 320px;
-    min-height: 160px;
+    min-height: 180px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 560px) {
-  /* line 131, ../scss/mediaqueries/_mobile.scss */
+  /* line 132, ../scss/mediaqueries/_mobile.scss */
   .video-js {
     min-width: 480px;
-    min-height: 240px;
+    min-height: 270px;
   }
 }
 /* TABLET */
@@ -892,7 +922,7 @@ p a {
   /* line 86, ../scss/mediaqueries/_tablet.scss */
   .video-js {
     min-width: 480px;
-    min-height: 240px;
+    min-height: 270px;
   }
 
   /* line 91, ../scss/mediaqueries/_tablet.scss */
@@ -916,8 +946,8 @@ p a {
 
   /* line 109, ../scss/mediaqueries/_tablet.scss */
   .video-js {
-    min-width: 768px;
-    min-height: 384px;
+    min-width: 730px;
+    min-height: 411px;
   }
 
   /* line 114, ../scss/mediaqueries/_tablet.scss */
@@ -934,7 +964,7 @@ p a {
   /* line 124, ../scss/mediaqueries/_tablet.scss */
   .video-js {
     min-width: 1024px;
-    min-height: 512px;
+    min-height: 576px;
   }
 }
 /* RETINA */

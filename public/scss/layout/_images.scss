@@ -34,6 +34,12 @@ figcaption {
 	margin: 0 auto 3rem;
 }
 
+.img_column {
+	width: 60%;
+	max-width: 720px;
+	margin: 0 auto;
+}
+
 .img_left, .img_right {
 	width: 38rem;
 	max-width: 500px;
@@ -58,4 +64,20 @@ figcaption {
 .img_parallax + .photo-info {
 	margin-left: 20px;
 	margin-right: 20px;
+}
+
+/*------------ VIDEO STYLES ------------*/
+
+.video {
+	margin: 40px auto;
+}
+
+.video-js {
+	margin: 0 auto;
+	min-width: 970px;
+	min-height: 546px;
+}
+
+.terminal .video {
+	display: none;
 }
