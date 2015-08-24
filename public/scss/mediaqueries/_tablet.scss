@@ -75,6 +75,15 @@
 		margin: 0.5rem auto;
 	}
 
+	.sidebar_right, .sidebar_left {
+		width: 30rem;
+		max-width: 80%;
+		float: none;
+		padding: 0;
+		border: none;
+		margin: 30px auto;
+	}
+
 }
 
 @media screen and (min-width: 560px) and (max-width: 767px) {

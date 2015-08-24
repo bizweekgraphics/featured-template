@@ -3,13 +3,41 @@
 
 /*--- LEFT SIDEBAR ---*/
 
+.sidebar_left {
+	float: left;
+	border-right: 1px solid $light-gray;
+	padding-right: 30px;
+}
 
 
 /*---  RIGHT SIDEBAR ---*/
 
+.sidebar_right {
+	float: right;
+	border-left: 1px solid $light-gray;
+	padding-left: 30px;
+}
 
 
 /*---  SIDEBAR W/ TEXT ---*/
+
+.sidebar_right, .sidebar_left {
+	width: 20rem;
+	max-width: 320px;
+	margin: 0.5rem 40px 0 40px;
+
+	h3 {
+		font-family: $HaasBold;
+		font-size: 1.3em;
+	}
+
+	.sidebar_text {
+		p {
+			font-size: 0.7em;
+			width: 100%;
+		}
+	}
+}
 
 
 /*---  SIDEBAR W/ IMAGES ---*/
