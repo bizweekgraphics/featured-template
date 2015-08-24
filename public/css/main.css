@@ -529,31 +529,31 @@ figcaption, .caption {
   font-size: 0.7em;
   font-family: "NHaasGroteskDSPro-55Rg", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
   color: rgba(0, 0, 0, 0.6);
-  text-align: right;
 }
 
-/* line 10, ../scss/layout/_images.scss */
+/* line 9, ../scss/layout/_images.scss */
 figcaption {
   margin-right: 0.325em;
 }
 
-/* line 14, ../scss/layout/_images.scss */
+/* line 13, ../scss/layout/_images.scss */
 .caption {
   width: 90%;
   margin: -2em auto 2em;
   max-width: 1280px;
 }
 
-/* line 20, ../scss/layout/_images.scss */
+/* line 19, ../scss/layout/_images.scss */
 .img_full {
   width: 90%;
   max-width: 1280px;
   margin: 0 auto 3rem;
 }
 
-/* line 26, ../scss/layout/_images.scss */
+/* line 25, ../scss/layout/_images.scss */
 .img_left, .img_right {
   width: 38rem;
+  max-width: 500px;
   margin-top: 0.5rem;
   margin-bottom: 0;
 }
@@ -585,8 +585,8 @@ blockquote p:last-of-type {
 /*--- PULL QUOTE ---*/
 /* line 22, ../scss/layout/_quotes.scss */
 .pullquotes {
-  font-size: 2em;
-  line-height: 3rem;
+  font-size: 2.2em;
+  line-height: 3.2rem;
   position: relative;
   width: 58%;
   max-width: 48rem;
@@ -596,7 +596,7 @@ blockquote p:last-of-type {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
-  font-family: "TiemposTextWeb-Semibold", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-family: "TiemposHeadlineWeb-Bold", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
 }
 
 /*------------  SIDEBAR STYLES ------------*/

@@ -4,7 +4,6 @@ figcaption, .caption {
 	font-size: 0.7em;
 	font-family: $NHaas;
 	color: rgba($black, 0.6);
-	text-align: right;
 }
 
 figcaption {
@@ -25,6 +24,7 @@ figcaption {
 
 .img_left, .img_right {
 	width: 38rem;
+	max-width: 500px;
 	margin-top: 0.5rem;
 	margin-bottom: 0;
 }
