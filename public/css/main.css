@@ -789,41 +789,79 @@ p a {
 }
 /* TABLET */
 @media screen and (min-width: 560px) and (max-width: 1023px) {
-  /* line 5, ../scss/mediaqueries/_tablet.scss */
+  /* line 4, ../scss/mediaqueries/_tablet.scss */
+  .lede-text-overlay-parallax {
+    min-height: 400px;
+  }
+  /* line 7, ../scss/mediaqueries/_tablet.scss */
+  .lede-text-overlay-parallax .lede-content {
+    width: 90%;
+    margin: 15% auto;
+  }
+
+  /* line 14, ../scss/mediaqueries/_tablet.scss */
   .lede-text-under .lede-content {
     margin: 30px auto;
     padding: 0 20px;
   }
 
-  /* line 11, ../scss/mediaqueries/_tablet.scss */
+  /* line 21, ../scss/mediaqueries/_tablet.scss */
+  .lede-full-width-img .lede-img {
+    min-height: 0;
+  }
+  /* line 25, ../scss/mediaqueries/_tablet.scss */
+  .lede-full-width-img .lede-content {
+    width: 90%;
+    margin: 30px auto;
+    position: relative;
+  }
+
+  /* line 32, ../scss/mediaqueries/_tablet.scss */
+  .lede-contained-img {
+    min-height: 400px;
+  }
+  /* line 35, ../scss/mediaqueries/_tablet.scss */
+  .lede-contained-img .lede-content {
+    max-width: 100%;
+  }
+  /* line 38, ../scss/mediaqueries/_tablet.scss */
+  .lede-contained-img .lede-content h1 {
+    font-size: 5rem;
+  }
+  /* line 42, ../scss/mediaqueries/_tablet.scss */
+  .lede-contained-img .lede-content .dek {
+    margin-left: 0;
+  }
+
+  /* line 48, ../scss/mediaqueries/_tablet.scss */
   h1 {
     font-size: 3rem;
   }
 
-  /* line 15, ../scss/mediaqueries/_tablet.scss */
+  /* line 52, ../scss/mediaqueries/_tablet.scss */
   .dek {
     font-size: 2rem;
     margin-bottom: 1.75rem;
   }
 
-  /* line 20, ../scss/mediaqueries/_tablet.scss */
+  /* line 57, ../scss/mediaqueries/_tablet.scss */
   .subhed {
     font-size: 0.9rem;
   }
 
-  /* line 24, ../scss/mediaqueries/_tablet.scss */
+  /* line 61, ../scss/mediaqueries/_tablet.scss */
   p {
     max-width: initial;
     font-size: 0.9em;
   }
 
-  /* line 30, ../scss/mediaqueries/_tablet.scss */
+  /* line 67, ../scss/mediaqueries/_tablet.scss */
   .video-js {
     min-width: 1023px;
     min-height: 511px;
   }
 
-  /* line 35, ../scss/mediaqueries/_tablet.scss */
+  /* line 72, ../scss/mediaqueries/_tablet.scss */
   .img_left, .img_right {
     float: none;
     max-width: 500px;
@@ -831,55 +869,55 @@ p a {
   }
 }
 @media screen and (min-width: 560px) and (max-width: 767px) {
-  /* line 44, ../scss/mediaqueries/_tablet.scss */
+  /* line 81, ../scss/mediaqueries/_tablet.scss */
   header, p, .pullquotes {
     width: 90%;
     max-width: 100%;
   }
 
-  /* line 49, ../scss/mediaqueries/_tablet.scss */
+  /* line 86, ../scss/mediaqueries/_tablet.scss */
   .video-js {
     min-width: 480px;
     min-height: 240px;
   }
 
-  /* line 54, ../scss/mediaqueries/_tablet.scss */
+  /* line 91, ../scss/mediaqueries/_tablet.scss */
   .img_right, .img_left {
     float: none;
     margin: 0 auto 1rem;
     width: 90%;
   }
 
-  /* line 61, ../scss/mediaqueries/_tablet.scss */
+  /* line 98, ../scss/mediaqueries/_tablet.scss */
   #main ul {
     width: 40%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 67, ../scss/mediaqueries/_tablet.scss */
+  /* line 104, ../scss/mediaqueries/_tablet.scss */
   header, p, .pullquotes {
     width: 80%;
     max-width: 100%;
   }
 
-  /* line 72, ../scss/mediaqueries/_tablet.scss */
+  /* line 109, ../scss/mediaqueries/_tablet.scss */
   .video-js {
     min-width: 768px;
     min-height: 384px;
   }
 
-  /* line 77, ../scss/mediaqueries/_tablet.scss */
+  /* line 114, ../scss/mediaqueries/_tablet.scss */
   .img_right, .img_left {
     width: 30rem;
   }
 
-  /* line 81, ../scss/mediaqueries/_tablet.scss */
+  /* line 118, ../scss/mediaqueries/_tablet.scss */
   #main ul {
     width: 30%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
-  /* line 87, ../scss/mediaqueries/_tablet.scss */
+  /* line 124, ../scss/mediaqueries/_tablet.scss */
   .video-js {
     min-width: 1024px;
     min-height: 512px;
