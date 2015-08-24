@@ -290,7 +290,7 @@ picture {
   font-family: "TiemposTextWeb-Semibold", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-size: 2em;
   margin: 2em auto 0;
-  border-bottom: 1px solid #2d2d35;
+  border-bottom: 1px solid #3c3c3c;
   padding-bottom: 0.25em;
 }
 
@@ -535,7 +535,7 @@ picture {
 figcaption, .caption {
   font-size: 0.7em;
   font-family: "NHaasGroteskDSPro-55Rg", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
-  color: #2d2d35;
+  color: #3c3c3c;
 }
 
 /* line 13, ../scss/layout/_images.scss */
@@ -575,10 +575,9 @@ figcaption {
 
 /* line 43, ../scss/layout/_images.scss */
 .img_left, .img_right {
-  width: 38rem;
-  max-width: 500px;
+  max-width: 450px;
   margin-top: 0.5rem;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 /* line 50, ../scss/layout/_images.scss */
@@ -680,7 +679,7 @@ blockquote p:last-of-type {
 .sidebar_right, .sidebar_left {
   width: 20rem;
   max-width: 320px;
-  margin: 0.5rem 40px 0 40px;
+  margin: 0.5rem 40px 1rem 40px;
 }
 /* line 29, ../scss/layout/_sidebar.scss */
 .sidebar_right h3, .sidebar_left h3 {
@@ -691,6 +690,7 @@ blockquote p:last-of-type {
 .sidebar_right .sidebar_text p, .sidebar_left .sidebar_text p {
   font-size: 0.7em;
   width: 100%;
+  margin: 20px auto;
 }
 
 /*---  SIDEBAR W/ IMAGES ---*/
@@ -705,11 +705,11 @@ p {
   max-width: 720px;
   margin: 30px auto;
   font: 18px/1.6em 'TiemposTextWeb-Regular', Georgia, Times, serif;
-  color: #2d2d35;
+  color: #3c3c3c;
 }
 /* line 12, ../scss/layout/_body.scss */
 p a {
-  color: #2d2d35;
+  color: #3c3c3c;
   text-decoration: none;
   border-bottom: 2px solid #2800D7;
 }
@@ -963,60 +963,63 @@ p a {
     max-width: 80%;
     float: none;
     padding: 0;
-    border: none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     margin: 30px auto;
   }
 }
 @media screen and (min-width: 560px) and (max-width: 767px) {
-  /* line 90, ../scss/mediaqueries/_tablet.scss */
+  /* line 93, ../scss/mediaqueries/_tablet.scss */
   header, p, .pullquotes {
     width: 90%;
     max-width: 100%;
   }
 
-  /* line 95, ../scss/mediaqueries/_tablet.scss */
+  /* line 98, ../scss/mediaqueries/_tablet.scss */
   .video-js, .video iframe {
     min-width: 480px;
     min-height: 270px;
   }
 
-  /* line 100, ../scss/mediaqueries/_tablet.scss */
+  /* line 103, ../scss/mediaqueries/_tablet.scss */
   .img_right, .img_left {
     float: none;
     margin: 0 auto 1rem;
     width: 90%;
   }
 
-  /* line 107, ../scss/mediaqueries/_tablet.scss */
+  /* line 110, ../scss/mediaqueries/_tablet.scss */
   #main ul {
     width: 40%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 113, ../scss/mediaqueries/_tablet.scss */
+  /* line 116, ../scss/mediaqueries/_tablet.scss */
   header, p, .pullquotes {
     width: 80%;
     max-width: 100%;
   }
 
-  /* line 118, ../scss/mediaqueries/_tablet.scss */
+  /* line 121, ../scss/mediaqueries/_tablet.scss */
   .video-js, .video iframe {
     min-width: 730px;
     min-height: 411px;
   }
 
-  /* line 123, ../scss/mediaqueries/_tablet.scss */
+  /* line 126, ../scss/mediaqueries/_tablet.scss */
   .img_right, .img_left {
     width: 30rem;
   }
 
-  /* line 127, ../scss/mediaqueries/_tablet.scss */
+  /* line 130, ../scss/mediaqueries/_tablet.scss */
   #main ul {
     width: 30%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
-  /* line 133, ../scss/mediaqueries/_tablet.scss */
+  /* line 136, ../scss/mediaqueries/_tablet.scss */
   .video-js, .video iframe {
     min-width: 1024px;
     min-height: 576px;
