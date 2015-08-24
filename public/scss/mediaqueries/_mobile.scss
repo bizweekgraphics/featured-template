@@ -1,8 +1,52 @@
 /* MOBILE */
 @media screen and (max-width: 560px) {
 
+	.lede-text-overlay-parallax {
+		min-height: 400px;
+
+		.lede-content {
+			width: 90%;
+			margin: 15% auto;
+		}
+	}
+
+	.lede-text-under {
+		.lede-content {
+			margin: 30px auto;
+			padding: 0 20px;
+		}
+	}
+
+	.lede-full-width-img {
+		.lede-img {
+			min-height: 0;
+		}
+
+		.lede-content {
+			width: 90%;
+			margin: 30px auto;
+			position: relative;
+		}
+	}
+
 	.lede video {
 		margin-bottom: 1rem;
+	}
+
+	.lede-video {
+		video {
+			display: none;
+		}
+
+		.mobile-lede {
+			display: block;
+		}
+
+		.lede-content {
+			width: 90%;
+			margin: -70% auto 0 0;
+			padding: 0 20px;
+		}
 	}
 
 	header {
@@ -12,6 +56,18 @@
 
 	h1 {
 		font-size: 1.8rem;
+	}
+
+	.lede-contained-img {
+		min-height: 400px;
+
+		.lede-content { 
+			max-width: 100%;
+
+			h1 {
+				font-size: 2.2rem;
+			}
+		}
 	}
 
 	.dek {

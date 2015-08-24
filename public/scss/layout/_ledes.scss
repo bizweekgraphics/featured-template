@@ -158,8 +158,8 @@ $white: #fff;
 
 	  h1 {
 		  font-family: $HaasBold;
-		  font-size: 150px;
-		  line-height: 120px;
+		  font-size: 9em;
+		  line-height: 0.8em;
 		  color: $white;
 		  font-weight: normal;
 		  vertical-align: middle;
@@ -178,7 +178,9 @@ $white: #fff;
 		.byline-feat {
 			font-family: $HaasBold;
 			color: $white; 
-			font-size:21px;
+			font-size: 1.2rem;
+			margin: 0;
+			width: 100%;
 		}
 	}
 }

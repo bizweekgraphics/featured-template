@@ -459,8 +459,8 @@ picture {
 /* line 159, ../scss/layout/_ledes.scss */
 .lede-contained-img .lede-content h1 {
   font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
-  font-size: 150px;
-  line-height: 120px;
+  font-size: 9em;
+  line-height: 0.8em;
   color: #fff;
   font-weight: normal;
   vertical-align: middle;
@@ -479,42 +479,44 @@ picture {
 .lede-contained-img .lede-content .byline-feat {
   font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
   color: #fff;
-  font-size: 21px;
+  font-size: 1.2rem;
+  margin: 0;
+  width: 100%;
 }
 
 /*--- LEDE W/FULL-WIDTH IMAGE & TEXT OVERLAY ---*/
-/* line 188, ../scss/layout/_ledes.scss */
+/* line 190, ../scss/layout/_ledes.scss */
 .lede-full-width-img {
   width: 100%;
   height: auto;
   position: relative;
 }
-/* line 193, ../scss/layout/_ledes.scss */
+/* line 195, ../scss/layout/_ledes.scss */
 .lede-full-width-img .lede-img {
   min-height: 100vh;
   min-width: 100%;
   margin-bottom: 30px;
 }
-/* line 199, ../scss/layout/_ledes.scss */
+/* line 201, ../scss/layout/_ledes.scss */
 .lede-full-width-img .lede-content {
   width: 80%;
   margin: -40% auto 0 15%;
   position: absolute;
   z-index: 1;
 }
-/* line 205, ../scss/layout/_ledes.scss */
+/* line 207, ../scss/layout/_ledes.scss */
 .lede-full-width-img .lede-content h1 {
   color: #000;
   background-color: #fff;
   display: inline;
 }
-/* line 211, ../scss/layout/_ledes.scss */
+/* line 213, ../scss/layout/_ledes.scss */
 .lede-full-width-img .lede-content .dek {
   display: inline;
   text-align: left;
   background-color: #fff;
 }
-/* line 217, ../scss/layout/_ledes.scss */
+/* line 219, ../scss/layout/_ledes.scss */
 .lede-full-width-img .lede-content .byline-feat {
   font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
   color: #000;
@@ -645,54 +647,109 @@ p a {
 /* MOBILE */
 @media screen and (max-width: 560px) {
   /* line 4, ../scss/mediaqueries/_mobile.scss */
+  .lede-text-overlay-parallax {
+    min-height: 400px;
+  }
+  /* line 7, ../scss/mediaqueries/_mobile.scss */
+  .lede-text-overlay-parallax .lede-content {
+    width: 90%;
+    margin: 15% auto;
+  }
+
+  /* line 14, ../scss/mediaqueries/_mobile.scss */
+  .lede-text-under .lede-content {
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+
+  /* line 21, ../scss/mediaqueries/_mobile.scss */
+  .lede-full-width-img .lede-img {
+    min-height: 0;
+  }
+  /* line 25, ../scss/mediaqueries/_mobile.scss */
+  .lede-full-width-img .lede-content {
+    width: 90%;
+    margin: 30px auto;
+    position: relative;
+  }
+
+  /* line 32, ../scss/mediaqueries/_mobile.scss */
   .lede video {
     margin-bottom: 1rem;
   }
 
-  /* line 8, ../scss/mediaqueries/_mobile.scss */
+  /* line 37, ../scss/mediaqueries/_mobile.scss */
+  .lede-video video {
+    display: none;
+  }
+  /* line 41, ../scss/mediaqueries/_mobile.scss */
+  .lede-video .mobile-lede {
+    display: block;
+  }
+  /* line 45, ../scss/mediaqueries/_mobile.scss */
+  .lede-video .lede-content {
+    width: 90%;
+    margin: -70% auto 0 0;
+    padding: 0 20px;
+  }
+
+  /* line 52, ../scss/mediaqueries/_mobile.scss */
   header {
     width: 90%;
     margin-bottom: 0.5rem;
   }
 
-  /* line 13, ../scss/mediaqueries/_mobile.scss */
+  /* line 57, ../scss/mediaqueries/_mobile.scss */
   h1 {
     font-size: 1.8rem;
   }
 
-  /* line 17, ../scss/mediaqueries/_mobile.scss */
+  /* line 61, ../scss/mediaqueries/_mobile.scss */
+  .lede-contained-img {
+    min-height: 400px;
+  }
+  /* line 64, ../scss/mediaqueries/_mobile.scss */
+  .lede-contained-img .lede-content {
+    max-width: 100%;
+  }
+  /* line 67, ../scss/mediaqueries/_mobile.scss */
+  .lede-contained-img .lede-content h1 {
+    font-size: 2.2rem;
+  }
+
+  /* line 73, ../scss/mediaqueries/_mobile.scss */
   .dek {
     font-size: 1.25rem;
     margin-bottom: 1.25rem;
   }
 
-  /* line 22, ../scss/mediaqueries/_mobile.scss */
+  /* line 78, ../scss/mediaqueries/_mobile.scss */
   .subhed {
     font-size: 0.95rem;
   }
 
-  /* line 26, ../scss/mediaqueries/_mobile.scss */
+  /* line 82, ../scss/mediaqueries/_mobile.scss */
   p {
     width: 90%;
     max-width: initial;
     font-size: 0.8em;
   }
 
-  /* line 32, ../scss/mediaqueries/_mobile.scss */
+  /* line 88, ../scss/mediaqueries/_mobile.scss */
   .img_right, .img_left {
     float: none;
     margin: 0 auto 1rem;
     width: 90%;
   }
 
-  /* line 38, ../scss/mediaqueries/_mobile.scss */
+  /* line 94, ../scss/mediaqueries/_mobile.scss */
   blockquote {
     padding: 0 1em 1em;
     margin: 0 auto;
     width: 90%;
   }
 
-  /* line 44, ../scss/mediaqueries/_mobile.scss */
+  /* line 100, ../scss/mediaqueries/_mobile.scss */
   .pullquotes {
     font-size: 1.2em;
     line-height: 1.4em;
@@ -702,29 +759,29 @@ p a {
     padding: 1rem auto;
   }
 
-  /* line 53, ../scss/mediaqueries/_mobile.scss */
+  /* line 109, ../scss/mediaqueries/_mobile.scss */
   .divider {
     margin: 0 auto 0.75em;
   }
 
-  /* line 58, ../scss/mediaqueries/_mobile.scss */
+  /* line 114, ../scss/mediaqueries/_mobile.scss */
   #main ul {
     width: 60%;
   }
-  /* line 62, ../scss/mediaqueries/_mobile.scss */
+  /* line 118, ../scss/mediaqueries/_mobile.scss */
   #main li {
     font-size: 0.75em;
     line-height: 1.25em;
   }
 
-  /* line 68, ../scss/mediaqueries/_mobile.scss */
+  /* line 124, ../scss/mediaqueries/_mobile.scss */
   .video-js {
     min-width: 320px;
     min-height: 160px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 560px) {
-  /* line 75, ../scss/mediaqueries/_mobile.scss */
+  /* line 131, ../scss/mediaqueries/_mobile.scss */
   .video-js {
     min-width: 480px;
     min-height: 240px;
@@ -733,83 +790,96 @@ p a {
 /* TABLET */
 @media screen and (min-width: 560px) and (max-width: 1023px) {
   /* line 5, ../scss/mediaqueries/_tablet.scss */
+  .lede-text-under .lede-content {
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+
+  /* line 11, ../scss/mediaqueries/_tablet.scss */
   h1 {
     font-size: 3rem;
   }
 
-  /* line 9, ../scss/mediaqueries/_tablet.scss */
+  /* line 15, ../scss/mediaqueries/_tablet.scss */
   .dek {
     font-size: 2rem;
     margin-bottom: 1.75rem;
   }
 
-  /* line 14, ../scss/mediaqueries/_tablet.scss */
+  /* line 20, ../scss/mediaqueries/_tablet.scss */
   .subhed {
     font-size: 0.9rem;
   }
 
-  /* line 18, ../scss/mediaqueries/_tablet.scss */
+  /* line 24, ../scss/mediaqueries/_tablet.scss */
   p {
     max-width: initial;
     font-size: 0.9em;
   }
 
-  /* line 24, ../scss/mediaqueries/_tablet.scss */
+  /* line 30, ../scss/mediaqueries/_tablet.scss */
   .video-js {
     min-width: 1023px;
     min-height: 511px;
   }
+
+  /* line 35, ../scss/mediaqueries/_tablet.scss */
+  .img_left, .img_right {
+    float: none;
+    max-width: 500px;
+    margin: 0.5rem auto;
+  }
 }
 @media screen and (min-width: 560px) and (max-width: 767px) {
-  /* line 32, ../scss/mediaqueries/_tablet.scss */
+  /* line 44, ../scss/mediaqueries/_tablet.scss */
   header, p, .pullquotes {
     width: 90%;
     max-width: 100%;
   }
 
-  /* line 37, ../scss/mediaqueries/_tablet.scss */
+  /* line 49, ../scss/mediaqueries/_tablet.scss */
   .video-js {
     min-width: 480px;
     min-height: 240px;
   }
 
-  /* line 42, ../scss/mediaqueries/_tablet.scss */
+  /* line 54, ../scss/mediaqueries/_tablet.scss */
   .img_right, .img_left {
     float: none;
     margin: 0 auto 1rem;
     width: 90%;
   }
 
-  /* line 49, ../scss/mediaqueries/_tablet.scss */
+  /* line 61, ../scss/mediaqueries/_tablet.scss */
   #main ul {
     width: 40%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* line 55, ../scss/mediaqueries/_tablet.scss */
+  /* line 67, ../scss/mediaqueries/_tablet.scss */
   header, p, .pullquotes {
     width: 80%;
     max-width: 100%;
   }
 
-  /* line 60, ../scss/mediaqueries/_tablet.scss */
+  /* line 72, ../scss/mediaqueries/_tablet.scss */
   .video-js {
     min-width: 768px;
     min-height: 384px;
   }
 
-  /* line 65, ../scss/mediaqueries/_tablet.scss */
+  /* line 77, ../scss/mediaqueries/_tablet.scss */
   .img_right, .img_left {
     width: 30rem;
   }
 
-  /* line 69, ../scss/mediaqueries/_tablet.scss */
+  /* line 81, ../scss/mediaqueries/_tablet.scss */
   #main ul {
     width: 30%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
-  /* line 75, ../scss/mediaqueries/_tablet.scss */
+  /* line 87, ../scss/mediaqueries/_tablet.scss */
   .video-js {
     min-width: 1024px;
     min-height: 512px;

@@ -1,6 +1,12 @@
 /* TABLET */
 @media screen and (min-width: 560px) and (max-width: 1023px) {
 
+	.lede-text-under {
+		.lede-content {
+			margin: 30px auto;
+			padding: 0 20px;
+		}
+	}
 
 	h1 {
 		font-size: 3rem;
@@ -24,6 +30,12 @@
 	.video-js {
 		min-width: 1023px;
 		min-height: 511px;
+	}
+
+	.img_left, .img_right {
+		float: none;
+		max-width: 500px;
+		margin: 0.5rem auto;
 	}
 
 }
