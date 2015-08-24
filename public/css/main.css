@@ -406,7 +406,7 @@ picture {
 /* line 105, ../scss/layout/_ledes.scss */
 .lede-video video {
   min-height: 100vh;
-  min-width: 100%;
+  width: 100%;
   margin-bottom: 30px;
 }
 /* line 111, ../scss/layout/_ledes.scss */
@@ -525,32 +525,45 @@ picture {
 
 /*------------ IMAGES STYLES ------------*/
 /* line 3, ../scss/layout/_images.scss */
+.photo-info {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 7, ../scss/layout/_images.scss */
 figcaption, .caption {
   font-size: 0.7em;
   font-family: "NHaasGroteskDSPro-55Rg", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
-  color: rgba(0, 0, 0, 0.6);
+  color: #2d2d35;
 }
 
-/* line 9, ../scss/layout/_images.scss */
+/* line 13, ../scss/layout/_images.scss */
 figcaption {
   margin-right: 0.325em;
 }
 
-/* line 13, ../scss/layout/_images.scss */
+/* line 17, ../scss/layout/_images.scss */
 .caption {
   width: 90%;
   margin: -2em auto 2em;
   max-width: 1280px;
 }
 
-/* line 19, ../scss/layout/_images.scss */
+/* line 23, ../scss/layout/_images.scss */
+.credit {
+  font-size: 0.6em;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  color: #999;
+}
+
+/* line 30, ../scss/layout/_images.scss */
 .img_full {
   width: 90%;
   max-width: 1280px;
   margin: 0 auto 3rem;
 }
 
-/* line 25, ../scss/layout/_images.scss */
+/* line 36, ../scss/layout/_images.scss */
 .img_left, .img_right {
   width: 38rem;
   max-width: 500px;
@@ -558,12 +571,12 @@ figcaption {
   margin-bottom: 0;
 }
 
-/* line 32, ../scss/layout/_images.scss */
+/* line 43, ../scss/layout/_images.scss */
 .img_left {
   float: left;
 }
 
-/* line 36, ../scss/layout/_images.scss */
+/* line 47, ../scss/layout/_images.scss */
 .img_right {
   float: right;
 }
@@ -575,15 +588,19 @@ blockquote {
   font-size: 0.9em;
   margin: 2em auto;
   padding: 2em;
-  width: 76%;
+  width: 70%;
 }
-/* line 14, ../scss/layout/_quotes.scss */
+/* line 10, ../scss/layout/_quotes.scss */
+blockquote p {
+  color: #999;
+}
+/* line 18, ../scss/layout/_quotes.scss */
 blockquote p:last-of-type {
   margin-bottom: 0;
 }
 
 /*--- PULL QUOTE ---*/
-/* line 22, ../scss/layout/_quotes.scss */
+/* line 26, ../scss/layout/_quotes.scss */
 .pullquotes {
   font-size: 2.2em;
   line-height: 3.2rem;
@@ -611,7 +628,7 @@ blockquote p:last-of-type {
 /*-- CENTERED COLUMN -- */
 /* line 5, ../scss/layout/_body.scss */
 p {
-  width: 65%;
+  width: 60%;
   max-width: 720px;
   margin: 30px auto;
   font: 18px/1.6em 'TiemposTextWeb-Regular', Georgia, Times, serif;
