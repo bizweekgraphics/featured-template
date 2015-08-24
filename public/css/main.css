@@ -328,9 +328,8 @@ picture {
 .lede-content h1 {
   font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
 }
-
-/* line 29, ../scss/layout/_ledes.scss */
-.dek {
+/* line 28, ../scss/layout/_ledes.scss */
+.lede-content .dek {
   font: 30px/36px "HaasDisplayBold", Helvetica, Arial, sans-serif;
   padding: 0;
 }
@@ -355,15 +354,15 @@ picture {
   background-color: #fff;
   display: inline;
 }
-/* line 55, ../scss/layout/_ledes.scss */
-.lede-text-overlay-parallax .dek {
+/* line 54, ../scss/layout/_ledes.scss */
+.lede-text-overlay-parallax .lede-content .dek {
   line-height: 36px;
   display: inline;
   text-align: left;
   background-color: #fff;
 }
-/* line 62, ../scss/layout/_ledes.scss */
-.lede-text-overlay-parallax .byline-feat {
+/* line 61, ../scss/layout/_ledes.scss */
+.lede-text-overlay-parallax .lede-content .byline-feat {
   font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
   color: #000;
   margin: 5px 0;
@@ -385,13 +384,13 @@ picture {
 .lede-text-under .lede-content h1 {
   color: #000;
 }
-/* line 85, ../scss/layout/_ledes.scss */
-.lede-text-under .dek {
+/* line 84, ../scss/layout/_ledes.scss */
+.lede-text-under .lede-content .dek {
   text-align: left;
   margin: 0;
 }
-/* line 90, ../scss/layout/_ledes.scss */
-.lede-text-under .byline-feat {
+/* line 89, ../scss/layout/_ledes.scss */
+.lede-text-under .lede-content .byline-feat {
   color: #767676;
   margin: 5px 0;
   font-size: 16px;
@@ -423,14 +422,14 @@ picture {
   background-color: #fff;
   display: inline;
 }
-/* line 124, ../scss/layout/_ledes.scss */
-.lede-video .dek {
+/* line 123, ../scss/layout/_ledes.scss */
+.lede-video .lede-content .dek {
   display: inline;
   text-align: left;
   background-color: #fff;
 }
-/* line 130, ../scss/layout/_ledes.scss */
-.lede-video .byline-feat {
+/* line 129, ../scss/layout/_ledes.scss */
+.lede-video .lede-content .byline-feat {
   font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
   color: #000;
   margin: 5px 0;
@@ -440,6 +439,47 @@ picture {
 /* line 138, ../scss/layout/_ledes.scss */
 .lede-video .mobile-lede {
   display: none;
+}
+
+/*--- LEDE W/CONTAINED IMAGE & TEXT OVERLAY ---*/
+/* line 147, ../scss/layout/_ledes.scss */
+.lede-contained-img {
+  background-image: url("http://placehold.it/2000x1200");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 6%;
+  min-height: 700px;
+}
+/* line 155, ../scss/layout/_ledes.scss */
+.lede-contained-img .lede-content {
+  max-width: 30%;
+  opacity: .8;
+}
+/* line 159, ../scss/layout/_ledes.scss */
+.lede-contained-img .lede-content h1 {
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  font-size: 150px;
+  line-height: 120px;
+  color: #fff;
+  font-weight: normal;
+  vertical-align: middle;
+  margin-left: -8px;
+}
+/* line 169, ../scss/layout/_ledes.scss */
+.lede-contained-img .lede-content .dek {
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  color: #fff;
+  display: block;
+  text-align: left;
+  padding-bottom: 20px;
+}
+/* line 178, ../scss/layout/_ledes.scss */
+.lede-contained-img .lede-content .byline-feat {
+  font-family: "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 21px;
 }
 
 /*------------ IMAGES STYLES ------------*/

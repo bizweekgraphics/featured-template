@@ -24,11 +24,11 @@ $white: #fff;
 	h1 {
 		font-family: $HaasBold;
 	}
-}
 
-.dek {
-	font: 30px/36px $HaasBold;
-	padding: 0;
+	.dek {
+		font: 30px/36px $HaasBold;
+		padding: 0;
+	}
 }
 
 
@@ -50,21 +50,21 @@ $white: #fff;
 			background-color: $white;
 			display: inline;
 		}
-	}
 
-	.dek {
-		line-height: 36px;
-		display: inline;
-		text-align: left;
-		background-color: $white;
-	}
+		.dek {
+			line-height: 36px;
+			display: inline;
+			text-align: left;
+			background-color: $white;
+		}
 
-	.byline-feat {
-		font-family: $HaasBold;
-		color: $black;
-		margin: 5px 0;
-		background-color: $white;
-		display: inline;
+		.byline-feat {
+			font-family: $HaasBold;
+			color: $black;
+			margin: 5px 0;
+			background-color: $white;
+			display: inline;
+		}
 	}
 }
 
@@ -80,17 +80,17 @@ $white: #fff;
 		h1 {
 			color: $black;
 		}
-	}
 
-	.dek {
-		text-align: left;
-		margin: 0;
-	}
+		.dek {
+			text-align: left;
+			margin: 0;
+		}
 
-	.byline-feat {
-		color: #767676;
-		margin: 5px 0;
-		font-size: 16px;
+		.byline-feat {
+			color: #767676;
+			margin: 5px 0;
+			font-size: 16px;
+		}
 	}
 }
 
@@ -119,25 +119,67 @@ $white: #fff;
 			background-color: $white;
 			display: inline;
 		}
-	}
 
-	.dek {
-		display: inline;
-		text-align: left;
-		background-color: $white;
-	}
+		.dek {
+			display: inline;
+			text-align: left;
+			background-color: $white;
+		}
 
-	.byline-feat {
-		font-family: $HaasBold;
-		color: $black;
-		margin: 5px 0;
-		background-color: $white;
-		display: inline;
+		.byline-feat {
+			font-family: $HaasBold;
+			color: $black;
+			margin: 5px 0;
+			background-color: $white;
+			display: inline;
+		}
 	}
 
 	.mobile-lede {
 		display: none;
 	}
 
+}
+
+
+/*--- LEDE W/CONTAINED IMAGE & TEXT OVERLAY ---*/
+
+.lede-contained-img {
+	background-image: url('http://placehold.it/2000x1200');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin: 6%;
+	min-height: 700px;
+
+	.lede-content {
+	  max-width: 30%;
+	  opacity: .8;
+
+	  h1 {
+		  font-family: $HaasBold;
+		  font-size: 150px;
+		  line-height: 120px;
+		  color: $white;
+		  font-weight: normal;
+		  vertical-align: middle;
+		  margin-left: -8px;
+		}
+
+		.dek {
+		  font-family: $HaasBold;
+		  font-size: 28px;
+		  color: $white;
+		  display: block;
+		  text-align: left;
+		  padding-bottom: 20px;
+		}
+
+		.byline-feat {
+			font-family: $HaasBold;
+			color: $white; 
+			font-size:21px;
+		}
+	}
 }
 
