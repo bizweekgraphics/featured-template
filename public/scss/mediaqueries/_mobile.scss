@@ -121,7 +121,7 @@
 		}
 	}
 
-	.video-js {
+	.video-js, .video iframe {
 		min-width: 320px;
 		min-height: 180px;
 	}
@@ -129,7 +129,7 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 560px) {
-	.video-js {
+	.video-js, .video iframe {
 		min-width: 480px;
 		min-height: 270px;
 	}

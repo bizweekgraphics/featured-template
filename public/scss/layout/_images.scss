@@ -72,10 +72,11 @@ figcaption {
 	margin: 40px auto;
 }
 
-.video-js {
+.video-js, .video iframe {
 	margin: 0 auto;
 	min-width: 970px;
 	min-height: 546px;
+	display: block;
 }
 
 .terminal .video {

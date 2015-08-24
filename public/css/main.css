@@ -611,13 +611,14 @@ figcaption {
 }
 
 /* line 75, ../scss/layout/_images.scss */
-.video-js {
+.video-js, .video iframe {
   margin: 0 auto;
   min-width: 970px;
   min-height: 546px;
+  display: block;
 }
 
-/* line 81, ../scss/layout/_images.scss */
+/* line 82, ../scss/layout/_images.scss */
 .terminal .video {
   display: none;
 }
@@ -819,14 +820,14 @@ p a {
   }
 
   /* line 124, ../scss/mediaqueries/_mobile.scss */
-  .video-js {
+  .video-js, .video iframe {
     min-width: 320px;
     min-height: 180px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 560px) {
   /* line 132, ../scss/mediaqueries/_mobile.scss */
-  .video-js {
+  .video-js, .video iframe {
     min-width: 480px;
     min-height: 270px;
   }
@@ -900,7 +901,7 @@ p a {
   }
 
   /* line 67, ../scss/mediaqueries/_tablet.scss */
-  .video-js {
+  .video-js, .video iframe {
     min-width: 1023px;
     min-height: 511px;
   }
@@ -920,7 +921,7 @@ p a {
   }
 
   /* line 86, ../scss/mediaqueries/_tablet.scss */
-  .video-js {
+  .video-js, .video iframe {
     min-width: 480px;
     min-height: 270px;
   }
@@ -945,7 +946,7 @@ p a {
   }
 
   /* line 109, ../scss/mediaqueries/_tablet.scss */
-  .video-js {
+  .video-js, .video iframe {
     min-width: 730px;
     min-height: 411px;
   }
@@ -962,7 +963,7 @@ p a {
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   /* line 124, ../scss/mediaqueries/_tablet.scss */
-  .video-js {
+  .video-js, .video iframe {
     min-width: 1024px;
     min-height: 576px;
   }
