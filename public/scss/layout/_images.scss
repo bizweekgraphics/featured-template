@@ -5,8 +5,7 @@
 }
 
 figcaption, .caption {
-	font-size: 0.7em;
-	font-family: $NHaas;
+	font: 0.7em $NHaas;
 	color: $text-black;
 }
 
@@ -41,10 +40,8 @@ figcaption {
 }
 
 .img_left, .img_right {
-	// width: 38rem;
 	max-width: 450px;
-	margin-top: 0.5rem;
-	margin-bottom: 1rem;
+	margin: 1em 40px;
 }
 
 .img_left {

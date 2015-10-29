@@ -9,14 +9,14 @@ blockquote {
 
 	p {
 		color: $medium-gray;
+
+		&:last-of-type  {
+			margin-bottom: 0;
+		}
 	}
 
 	em {
 
-	}
-
-	p:last-of-type  {
-		margin-bottom: 0;
 	}
 }
 
@@ -24,8 +24,7 @@ blockquote {
 
 /*--- PULL QUOTE ---*/
 .pullquotes {
-	font-size: 2.2em;
-	line-height: 3.2rem;
+	font: 2.2em/3.2rem $tiempos-bold;
 	position: relative;
 	width: 58%;
 	max-width: 48rem;
@@ -35,5 +34,8 @@ blockquote {
 	border-top: 1px solid rgba($black, 0.1);
 	border-bottom: 1px solid rgba($black, 0.1);
 	text-align: center;
-	font-family: $tiempos-bold;
+
+	em {
+		font-family: $tiempos-bold-italic;
+	}
 }

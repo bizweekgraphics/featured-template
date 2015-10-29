@@ -6,7 +6,7 @@ p {
 	width: 60%;
   	max-width: 720px;
   	margin: 30px auto;
-  	font: 18px/1.6em 'TiemposTextWeb-Regular', Georgia, Times, serif;
+  	font: 18px/1.6em $tiempos;
   	color: $text-black;
 
   	a {
@@ -16,6 +16,27 @@ p {
 	}
 }
 
+.section-break {
+	margin-top: 50px;
+	padding-top: 50px;
+	
+	&:first-line {
+		font: 20px $HaasBold;
+		color: $black;
+	}
+}
+
 .terminal p a {
 	border-bottom: none;
+}
+
+.closer {
+	display: inline;
+	margin-top: -5px;
+	margin-left: 2px;
+	height: 14px;
+}
+
+.top-banner a:hover {
+	color: $white;
 }

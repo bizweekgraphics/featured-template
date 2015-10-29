@@ -10,26 +10,18 @@
 // Typography
 .example_title, .example_subtitle {
 	color: #444;
-	// text-transform: uppercase;
-	// font-family: $NHaas-bold;
-	// font-weight: 600;
-
-
 }
 
 .example_title {
-	font-family: $tiempos-semibold;
-	font-size: 2em;
+	font: 2em $tiempos-semibold;
 	margin: 2em auto 0;
 	border-bottom: 1px solid $text-black;
 	padding-bottom: 0.25em;
 }
 
 .example_subtitle {
-	font-family: $tiempos-italic;
-	font-size: 1em;
+	font: 1em $tiempos-italic;
 	margin: 3em auto 0.5em;
-	// color: #5D5973;
 	color: #333;
 	display: inline-block;
 	background-color: rgba(249, 70, 15, 0.5);

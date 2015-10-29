@@ -288,17 +288,19 @@ picture {
   color: #444;
 }
 
-/* line 15, ../scss/layout/_example_page.scss */
+/* line 20, ../scss/layout/_example_page.scss */
 .example_title {
-  font: 2em "TiemposTextWeb-Semibold", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-family: "TiemposTextWeb-Semibold", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-size: 2em;
   margin: 2em auto 0;
   border-bottom: 1px solid #3c3c3c;
   padding-bottom: 0.25em;
 }
 
-/* line 22, ../scss/layout/_example_page.scss */
+/* line 28, ../scss/layout/_example_page.scss */
 .example_subtitle {
-  font: 1em "TiemposTextWeb-RegularItalic", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-family: "TiemposTextWeb-RegularItalic", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-size: 1em;
   margin: 3em auto 0.5em;
   color: #333;
   display: inline-block;
@@ -540,24 +542,25 @@ picture {
 
 /* line 7, ../scss/layout/_images.scss */
 figcaption, .caption {
-  font: 0.7em "NHaasGroteskDSPro-55Rg", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
+  font-size: 0.7em;
+  font-family: "NHaasGroteskDSPro-55Rg", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, sans-serif;
   color: #3c3c3c;
 }
 
-/* line 12, ../scss/layout/_images.scss */
+/* line 13, ../scss/layout/_images.scss */
 figcaption {
   margin-right: 0.325em;
   margin-top: 0.3em;
 }
 
-/* line 17, ../scss/layout/_images.scss */
+/* line 18, ../scss/layout/_images.scss */
 .caption {
   width: 90%;
   margin: -2em auto 2em;
   max-width: 1280px;
 }
 
-/* line 23, ../scss/layout/_images.scss */
+/* line 24, ../scss/layout/_images.scss */
 .credit {
   font-size: 0.6em;
   margin-top: 3px;
@@ -565,56 +568,56 @@ figcaption {
   color: #999;
 }
 
-/* line 30, ../scss/layout/_images.scss */
+/* line 31, ../scss/layout/_images.scss */
 .img_full {
   width: 90%;
   max-width: 1280px;
   margin: 0 auto 3rem;
 }
 
-/* line 36, ../scss/layout/_images.scss */
+/* line 37, ../scss/layout/_images.scss */
 .img_column {
   width: 60%;
   max-width: 720px;
   margin: 0 auto;
 }
 
-/* line 42, ../scss/layout/_images.scss */
+/* line 43, ../scss/layout/_images.scss */
 .img_left, .img_right {
   max-width: 450px;
   margin: 1em 40px;
 }
 
-/* line 47, ../scss/layout/_images.scss */
+/* line 49, ../scss/layout/_images.scss */
 .img_left {
   float: left;
 }
 
-/* line 51, ../scss/layout/_images.scss */
+/* line 53, ../scss/layout/_images.scss */
 .img_right {
   float: right;
 }
 
-/* line 55, ../scss/layout/_images.scss */
+/* line 57, ../scss/layout/_images.scss */
 .img_parallax {
   height: 100vh;
   width: 100%;
   margin: 0;
 }
 
-/* line 61, ../scss/layout/_images.scss */
+/* line 63, ../scss/layout/_images.scss */
 .img_parallax + .photo-info {
   margin-left: 20px;
   margin-right: 20px;
 }
 
 /*------------ VIDEO STYLES ------------*/
-/* line 68, ../scss/layout/_images.scss */
+/* line 70, ../scss/layout/_images.scss */
 .video {
   margin: 40px auto;
 }
 
-/* line 72, ../scss/layout/_images.scss */
+/* line 74, ../scss/layout/_images.scss */
 .video-js, .video iframe {
   margin: 0 auto;
   min-width: 970px;
@@ -622,7 +625,7 @@ figcaption {
   display: block;
 }
 
-/* line 79, ../scss/layout/_images.scss */
+/* line 81, ../scss/layout/_images.scss */
 .terminal .video {
   display: none;
 }
@@ -640,7 +643,7 @@ blockquote {
 blockquote p {
   color: #999;
 }
-/* line 13, ../scss/layout/_quotes.scss */
+/* line 18, ../scss/layout/_quotes.scss */
 blockquote p:last-of-type {
   margin-bottom: 0;
 }
@@ -648,7 +651,8 @@ blockquote p:last-of-type {
 /*--- PULL QUOTE ---*/
 /* line 26, ../scss/layout/_quotes.scss */
 .pullquotes {
-  font: 2.2em/3.2rem "TiemposHeadlineWeb-Bold", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-size: 2.2em;
+  line-height: 3.2rem;
   position: relative;
   width: 58%;
   max-width: 48rem;
@@ -658,8 +662,9 @@ blockquote p:last-of-type {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
+  font-family: "TiemposHeadlineWeb-Bold", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
 }
-/* line 38, ../scss/layout/_quotes.scss */
+/* line 40, ../scss/layout/_quotes.scss */
 .pullquotes em {
   font-family: "TiemposHeadline-BoldItalic", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
 }
@@ -711,7 +716,7 @@ p {
   width: 60%;
   max-width: 720px;
   margin: 30px auto;
-  font: 18px/1.6em "TiemposTextWeb-Regular", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font: 18px/1.6em 'TiemposTextWeb-Regular', Georgia, Times, serif;
   color: #3c3c3c;
 }
 /* line 12, ../scss/layout/_body.scss */
@@ -726,18 +731,20 @@ p a {
   margin-top: 50px;
   padding-top: 50px;
 }
-/* line 23, ../scss/layout/_body.scss */
+
+/* line 24, ../scss/layout/_body.scss */
 .section-break:first-line {
-  font: 20px "HaasDisplayBold", Helvetica, Arial, sans-serif;
+  font-family: 'HaasTextBold', Helvetica, Arial, sans-serif;
+  font-size: 20px;
   color: #000;
 }
 
-/* line 29, ../scss/layout/_body.scss */
+/* line 30, ../scss/layout/_body.scss */
 .terminal p a {
   border-bottom: none;
 }
 
-/* line 33, ../scss/layout/_body.scss */
+/* line 34, ../scss/layout/_body.scss */
 .closer {
   display: inline;
   margin-top: -5px;
@@ -745,9 +752,9 @@ p a {
   height: 14px;
 }
 
-/* line 40, ../scss/layout/_body.scss */
+/* line 41, ../scss/layout/_body.scss */
 .top-banner a:hover {
-  color: #fff;
+  color: white;
 }
 
 /*-- MEDIA QUERIES -- */

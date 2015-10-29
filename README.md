@@ -1,2 +1,7 @@
-# featured-template
-Creating a modular template for the producers and editors to use
+# feature-template
+
+## WORK IN PROGRESS
+
+Copy/Paste modular elements from `components.html`
+
+Starter page: `index.html`

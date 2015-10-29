@@ -19,15 +19,23 @@ $white: #fff;
 /*------------ COMMON STYLES ------------*/
 
 .lede-content {
-	max-width: 700px;
+	max-width: 720px;
 	
 	h1 {
 		font-family: $HaasBold;
+
+		em {
+			font-family: 'BWHaasText-76BoldItalic';
+		}
 	}
 
 	.dek {
 		font: 30px/36px $HaasBold;
 		padding: 0;
+
+		em {
+			font-family: 'BWHaasText-76BoldItalic';
+		}
 	}
 }
 
@@ -75,7 +83,7 @@ $white: #fff;
 	padding: 0;
 
 	.lede-content {
-		margin: 30px auto 30px 15%;
+		margin: 30px auto 70px;
 	
 		h1 {
 			color: $black;
@@ -103,7 +111,6 @@ $white: #fff;
 	position: relative;
 
 	video {
-		min-height: 100vh;
 		width: 100%;
 		margin-bottom: 30px;
 	}
@@ -193,7 +200,6 @@ $white: #fff;
 	position: relative;
 
 	.lede-img {
-		min-height: 100vh;
 		min-width: 100%;
 		margin-bottom: 30px;
 	}

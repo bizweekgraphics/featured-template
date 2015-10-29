@@ -39,13 +39,12 @@ em {
 
 a {
     color: $action-color;
-    text-decoration: underline;
     transition: color 0.1s linear;
 
     &:active,
     &:focus,
     &:hover {
-    color: darken($action-color, 15%);
+    color: inherit;
     }
 
     &:active,
